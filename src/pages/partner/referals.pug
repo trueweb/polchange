@@ -1,0 +1,62 @@
+extends ../../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-2()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						+b.text-box
+							+e.title Привлеченные рефералы
+							+e.text Здесь Вы можете увидеть привлеченных Вами рефералов – посетителей, зарегистрировавшихся в качестве партнера после перехода по Вашей партнерской ссылке.
+							+b-form_searsch-date()
+							+b.TABLE.table(class="_striped _page-referals")
+								+e.THEAD.title
+									+e.THEAD.head
+										+e.TR.row
+											+e.TH.col_title Реферал
+											+e.TH.col_title Дата
+											+e.TH.col_title Доход от реферала
+											+e.TH.col_title Доход от рефералов реферала
+											+e.TH.col_title Рефералов у реферала
+									+e.TBODY.body
+										+e.TR.row
+											+e.TD.col Khayesicat
+											+e.TD.col 07.10.17
+											+e.TD.col $0,00
+											+e.TD.col $0,00
+											+e.TD.col 0
+
+										+e.TR.row
+											+e.TD.col Khayesicat
+											+e.TD.col 07.10.17
+											+e.TD.col $0,00
+											+e.TD.col $0,00
+											+e.TD.col 0
+
+										+e.TR.row
+											+e.TD.col Khayesicat
+											+e.TD.col 07.10.17
+											+e.TD.col $0,00
+											+e.TD.col $0,00
+											+e.TD.col 0
+											
+										+e.TR.row
+											+e.TD.col_total Всего: 13
+											+e.TD.col_total
+											+e.TD.col_total $21,27
+											+e.TD.col_total $21,27
+											+e.TD.col_total 337
+									
+							+b-pagination()
+										

@@ -1,0 +1,25 @@
+mixin b-sidebar_left-1
+	+b.ASIDE.sidebar_left
+		+e.row_1
+			+e.I.close.fa.fa-close
+		// currency-selection
+		+e.row_2
+			+b.social-btn(class='_sidebar')
+				+e.list
+					+e.item_instagram
+						+e.A.link(href="#").fa.fa-instagram
+					+e.item_vk
+						+e.A.link(href="#").fa.fa-vk
+		+e.row_3
+			+b-table_currency-selection()
+
+		// btn show more 
+		+b.BUTTON.btn_more-currency-selection.fa.fa-angle-down#btn_more-currency-selection
+
+mixin b-sidebar_left-2
+	+b.ASIDE.sidebar_left
+		+e.row_1
+			+e.I.close.fa.fa-close
+		// навигация партнёрам
+		+e.row_2
+			+b-nav_sidebar-left()

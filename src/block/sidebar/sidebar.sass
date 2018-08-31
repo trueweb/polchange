@@ -1,0 +1,17 @@
+.sidebar
+	&__row
+		&_1
+			text-align: right
+	&__close
+		font-size: 25px
+		color: #ffffff
+		cursor: pointer
+		position: relative
+		padding: 5px
+		display: none
+		
+@if $adaptive
+	@media #{$pc}
+		.sidebar
+			&__close
+				display: inline-block

@@ -1,0 +1,49 @@
+mixin b-nav_main
+	+b.NAV.nav(class="_main" id="nav_main")
+		+e.btn-burger(class="_main" data-id="nav__main")
+			+e.btn-burger-item
+		+e.UL.list#nav-list_main
+			+e.LI.item.active
+				+e.A.link(href="/index.html") Мониторинг
+			+e.LI.item
+				+e.A.link(href="/exchangers.html") Обменники
+			+e.LI.item
+				+e.A.link(href="/partner.html") Партнерам
+			+e.LI.item
+				+e.A.link(href="/bonuse.html") Бонусы
+			+e.LI.item
+				+e.A.link(href="/news.html") Новости
+			+e.LI.item
+				+e.A.link(href="/faq.html") FAQ
+			+e.LI.item
+				+e.A.link(href="/admin.html") Админка
+
+mixin b-nav_sidebar-left
+	+b.NAV.nav(class="_sidebar-left" id="nav_sidebar-left")
+		+e.UL.list#nav-list_main
+			+e.LI.item.active
+				+e.A.link(href="/partner/account.html") Партнерский аккаунт
+			+e.LI.item
+				+e.A.link(href="/partner/stats.html") Привлеченные посетители
+			+e.LI.item
+				+e.A.link(href="/partner/referals.html") Привлеченные рефералы
+			+e.LI.item
+				+e.A.link(href="/partner/withdraw.html") Вывод партнерских средств
+			+e.LI.item
+				+e.A.link(href="/partner/generate.html") Код партнерской ссылки
+			+e.LI.item
+				+e.A.link(href="/partner/promo.html") Баннеры
+			+e.LI.item
+				+e.A.link(href="/partner/text.html") Текстовые материалы
+			+e.LI.item
+				+e.A.link(href="/partner/scripts.html") Скрипты и формы
+			+e.LI.item
+				+e.A.link(href="/partner/attract.html") Как привлекать посетителей
+			+e.LI.item
+				+e.A.link(href="/partner/faq.html") Партнерский FAQ
+			+e.LI.item
+				+e.A.link(href="/partner/rules.html") Условия партнерской программы
+			+e.LI.item
+				+e.A.link(href="#") Профиль
+			+e.LI.item
+				+e.A.link(href="auth.php?action=exit") Выход

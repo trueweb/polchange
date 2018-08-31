@@ -1,0 +1,31 @@
+include ../../../node_modules/bemto.pug/bemto.pug
+include ../block/index
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		block meta_k
+		block meta_d
+		block title
+	body
+		.wrapper
+			+b-header()
+			block main	
+			+b.btn_show-currency-selection#btn_show-currency-selection Доступные напраления обмена
+			+b-social-btn('main-2')
+			+b-modal_history()
+			+b-modal_setings()
+			+b-modal_login()
+			+b-modal_reg()
+
+			+b-footer()
+
+			link(rel="stylesheet", href="/vendor/fontawesome/css/font-awesome.min.css")
+			link(rel="stylesheet", href="/vendor/sprite/sprite.css")
+			link(rel="stylesheet", href="/css/style.css")
+			script(src="/vendor/jquery.min.js")
+			script(src="/js/app.js")

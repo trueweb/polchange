@@ -1,0 +1,16 @@
+mixin b-pagination
+	+b.pagination
+		+e.text.item 52 страницы:
+		+e.A(href="").link_start.arrow.fa.fa-backward
+		+e.A(href="").link_prev.arrow.fa.fa-caret-left 
+		+e.UL.list.item
+			+e.LI.item.active
+				+e.A.link(href="#") 1
+			+e.LI.item
+				+e.A.link(href="#") 2
+			+e.LI.item
+				+e.A.link(href="#") 3
+			+e.LI.item
+				+e.A.link(href="#") 4
+		+e.A(href="").link_next.arrow.fa.fa-caret-right
+		+e.A(href="").link_end.arrow.fa.fa-forward

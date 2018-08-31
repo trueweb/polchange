@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="keywords" content="meta_k .........text"/>
+    <meta name="description" content="meta_d ......text"/>
+    <title>Doc title</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__col header__col_1"><a class="logo" href="/"><img class="logo__img" src="/img/logo.png" alt="" role="presentation"/></a>
+              <!--
+              +e.row
+              	+e.SPAN.col_1
+              		+e.IMG.img(src="/img/logo-graphik.png")
+              	+e.SPAN.col_2 POL
+              	+e.SPAN.col_3 CHANGE
+              
+              -->
+              <div class="btn btn_nav-main-toggle fa fa-bars" id="btn_nav-main-toggle">
+              </div>
+            </div>
+            <div class="header__col header__col_2"><a class="banner banner_header" href="/contests"><img class="banner__img" src="/img/banner/header-banner-1.gif" alt="" role="presentation"/></a><a class="banner banner_header" href="/contests"><img class="banner__img" src="/img/banner/header-banner-2.gif" alt="" role="presentation"/></a>
+            </div>
+            <div class="header__col header__col_3">
+              <!--+e.auth
+              +e.SPAN.text_auth Вы вошли как: 
+              +e.SPAN.text_user Андрей 
+              +b.A.btn_exit(href="auth.php?action=exit") Выйти
+              
+              -->
+              <button class="btn btn_login" id="btn_login">
+              </button>
+              <button class="btn btn_reg" id="btn_reg">
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="content">
+          <div class="content__col content__col_1">
+            <aside class="sidebar sidebar_left">
+              <div class="sidebar__row sidebar__row_1"><i class="sidebar__close fa fa-close"></i>
+              </div>
+              <!-- currency-selection-->
+              <div class="sidebar__row sidebar__row_2">
+                <div class="social-btn social-btn_sidebar">
+                  <div class="social-btn__list">
+                    <div class="social-btn__item social-btn__item_instagram"><a class="social-btn__link fa fa-instagram" href="#"></a>
+                    </div>
+                    <div class="social-btn__item social-btn__item_vk"><a class="social-btn__link fa fa-vk" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar__row sidebar__row_3">
+                <table class="table table_currency-selection" id="table_currency-selection">
+                  <thead class="table__title">
+                    <thead class="table__head">
+                      <tr class="table__row">
+                        <th class="table__col table__col_title">Отдаете
+                        </th>
+                        <th class="table__col table__col_title">Получаете
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__body">
+                      <!-- 
+                      в атрибутах data-currency - узазыватся названия валют
+                      в атрибутах data-category - узазыватся названия категорий
+                      когда человек выбирает 2 клетки где совпадают значения атрибутов data-category происходит редирект согласно значений data-currency
+                      -->
+                      <tr class="table__row">
+                        <td class="table__col table__col_give" data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~"><i class="icon icon-WMZ"></i><span class="table__text">WMZ</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~"><i class="icon icon-WMZ"></i><span class="table__text">WMZ</span>
+                        </td>
+                      </tr>
+                      <tr class="table__row hide">
+                        <td class="table__col table__col_give" data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMR</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMR</span>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__col table__col_give" data-category="currency" data-currency="WMU" data-direction="~WMR~~WMU~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMU</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="currency" data-currency="WMU" data-direction="~WMR~~WMU~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMU</span>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__col table__col_give" data-category="currency" data-currency="Liqpay" data-direction="~WMR~~WMZ~"><i class="icon icon-liqpay"></i><span class="table__text">Liqpay</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="currency" data-currency="Liqpay" data-direction="~WMR~~WMZ~"><i class="icon icon-liqpay"></i><span class="table__text">Liqpay</span>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__col table__col_give" data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMZ</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMZ</span>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__col table__col_give" data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMR</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~"><i class="icon icon-webmoney-blue"></i><span class="table__text">WMR</span>
+                        </td>
+                      </tr>
+                      <!-- 
+                      Рядам таблиц которые должны быть скрыты по умолчанию добавляется класс "hide"
+                      Заголовкам категорий добавляется атрибут colspan="2" и класс "table__col_title" 
+                      -->
+                      <tr class="table__row hide">
+                        <td class="table__col table__col_title" colspan="2"><span class="table__text">Денежные переводы</span>
+                        </td>
+                      </tr>
+                      <tr class="table__row hide">
+                        <td class="table__col table__col_give" data-category="transfer" data-currency="Paypal" data-direction="~Paypal~~WMR~~WMZ~"><i class="icon icon-paypal"></i><span class="table__text">Paypal</span>
+                        </td>
+                        <td class="table__col table__col_get" data-category="transfer" data-currency="Paypal" data-direction="~Paypal~~WMR~~WMZ~"><i class="icon icon-paypal"></i><span class="table__text">Paypal</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </thead>
+                </table>
+              </div>
+              <!-- btn show more -->
+              <button class="btn btn_more-currency-selection fa fa-angle-down" id="btn_more-currency-selection">
+              </button>
+            </aside>
+          </div>
+          <div class="content__col content__col_2">
+            <main class="main" role="main">
+              <!-- nav-->
+              <nav class="nav nav_main" id="nav_main">
+                <div class="nav__btn-burger nav__btn-burger_main" data-id="nav__main">
+                  <div class="nav__btn-burger-item">
+                  </div>
+                </div>
+                <ul class="nav__list" id="nav-list_main">
+                  <li class="nav__item active"><a class="nav__link" href="/index.html">Мониторинг</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/exchangers.html">Обменники</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/partner.html">Партнерам</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/bonuse.html">Бонусы</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/news.html">Новости</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/admin.html">Админка</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- text-->
+              <div class="text-box text-box_gradient">
+                <div class="text-box__title">Адин панель
+                </div>
+                <div class="tab tab_admin">
+                  <div class="tab__nav">
+                    <div class="tab__item active" id="tab__item_add-exchanger">Добавление обменника
+                    </div>
+                    <div class="tab__item" id="tab__item_get-money">Вывод средств
+                    </div>
+                  </div>
+                  <div class="tab__content active" data-id="tab__item_add-exchanger">
+                    <form class="form form_add-exchanger" action="admin.php?action=add-exchanger" method="POST">
+                      <div class="form__title">Добавление обменника
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_mail" name="mail" placeholder="Email владельца" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_name" name="name" placeholder="Название" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_link" name="link" placeholder="Ссылка" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_start-work" name="start_work" placeholder="Дата начала работы в виде 2015-04" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_code-contry" name="code_contry" placeholder="Двухзначный код страны - RU/US" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_wmid" name="wmid" placeholder="WMID" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_perfect-money" name="perfect_money" placeholder="ID аккаунта Perfect Money" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_link_price" name="link_price" placeholder="Ссылка на XML файл с ценами" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__field form__field_cur" name="cur" placeholder="Передача параметров cur" type="text"/>
+                      </div>
+                      <div class="form__item"><input class="form__btn-send" type="submit" value="Добавить"/>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab__content" data-id="tab__item_get-money">
+                    <table class="table table_striped table_withdrawing-money">
+                      <thead class="table__title">
+                        <thead class="table__head">
+                          <tr class="table__row">
+                            <th class="table__col table__col_title">№
+                            </th>
+                            <th class="table__col table__col_title">Дата
+                            </th>
+                            <th class="table__col table__col_title">Юзер
+                            </th>
+                            <th class="table__col table__col_title">Статус
+                            </th>
+                            <th class="table__col table__col_title">Сумма
+                            </th>
+                            <th class="table__col table__col_title">Кошелек
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="table__body">
+                          <tr class="table__row">
+                            <td class="table__col">1
+                            </td>
+                            <td class="table__col">14.05 14:16:29
+                            </td>
+                            <td class="table__col">Иван
+                            </td>
+                            <td class="table__col">Исполнено
+                            </td>
+                            <td class="table__col">100$
+                            </td>
+                            <td class="table__col">WMZ - 23576236
+                            </td>
+                          </tr>
+                          <tr class="table__row">
+                            <td class="table__col">1
+                            </td>
+                            <td class="table__col">14.05 14:16:29
+                            </td>
+                            <td class="table__col">Иван
+                            </td>
+                            <td class="table__col"> <a class="table__link" href="#">Завершить</a>
+                            </td>
+                            <td class="table__col">100$
+                            </td>
+                            <td class="table__col">WMZ - 23576236
+                            </td>
+                          </tr>
+                          <tr class="table__row">
+                            <td class="table__col">1
+                            </td>
+                            <td class="table__col">14.05 14:16:29
+                            </td>
+                            <td class="table__col">Иван
+                            </td>
+                            <td class="table__col"> <a class="table__link" href="#">Отменить</a>
+                            </td>
+                            <td class="table__col">100$
+                            </td>
+                            <td class="table__col">WMZ - 23576236
+                            </td>
+                          </tr>
+                        </tbody>
+                      </thead>
+                    </table>
+                    <div class="pagination">
+                      <div class="pagination__text item">52 страницы:
+                      </div><a class="pagination__link pagination__link_start arrow fa fa-backward" href=""></a><a class="pagination__link pagination__link_prev arrow fa fa-caret-left" href=""> </a>
+                      <ul class="pagination__list item">
+                        <li class="pagination__item active"><a class="pagination__link" href="#">1</a>
+                        </li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">2</a>
+                        </li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">3</a>
+                        </li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">4</a>
+                        </li>
+                      </ul><a class="pagination__link pagination__link_next arrow fa fa-caret-right" href=""></a><a class="pagination__link pagination__link_end arrow fa fa-forward" href=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div class="btn btn_show-currency-selection" id="btn_show-currency-selection">Доступные напраления обмена
+      </div>
+      <div class="social-btn social-btn_main-2">
+        <div class="social-btn__list">
+          <div class="social-btn__item social-btn__item_tw"><a class="social-btn__link fa fa-twitter" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_gg"><a class="social-btn__link fa fa-google" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_fb"><a class="social-btn__link fa fa-facebook" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_yb"><a class="social-btn__link fa fa-youtube" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_instagram"><a class="social-btn__link fa fa-instagram" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_vk"><a class="social-btn__link fa fa-vk" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_rss"><a class="social-btn__link fa fa-rss" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_history" id="modal_history">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <div class="text-box">
+              <h3 class="text-box__title">История переходов на обменные пункты
+              </h3>
+              <p class="text-box__text">Здесь приведен список произведенных вами ранее переходов на обменные пункты. Показан курс обмена и резерв валюты на момент совершения перехода с мониторинга на обменный пункт.
+              </p>
+            </div>
+            <div class="modal__box-scroll">
+              <table class="table table_modal-history table_striped">
+                <thead class="table__title">
+                  <thead class="table__head">
+                    <tr class="table__row">
+                      <th class="table__col table__col_title">Дата
+                      </th>
+                      <th class="table__col table__col_title">Обменник
+                      </th>
+                      <th class="table__col table__col_title">Направление и курс обмена
+                      </th>
+                      <th class="table__col table__col_title">Резерв
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="table__body">
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                  </tbody>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_setings" id="modal_settings">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <div class="text-box">
+              <h3 class="text-box__title">Персональные настройки
+              </h3>
+              <p class="text-box__text">Здесь вы можете произвести некоторые настройки сайта BestChange.ru. Данные параметры будут храниться в cookies вашего браузера. При посещении сайта с другого компьютера или браузера вам будет необходимо сохранить эти настройки заново.
+              </p>
+            </div>
+            <form class="form form_modal-settings" action="script.php?action=settings" id="form_modal-settings">
+              <div class="form__item">
+                <div class="form__name">Обновление:
+                </div>
+                <select class="form__select" name="time_up">
+                  <option class="form__option" value="15" selected="selected">через 15 секунд
+                  </option>
+                  <option class="form__option" value="30">через 30 секунд
+                  </option>
+                  <option class="form__option" value="45">через 45 секунд
+                  </option>
+                  <option class="form__option" value="60">через минуту
+                  </option>
+                  <option class="form__option" value="120">через 2 минуты
+                  </option>
+                  <option class="form__option" value="180">через 3 минуты
+                  </option>
+                  <option class="form__option" value="300">через 5 минут
+                  </option>
+                  <option class="form__option" value="0">не обновлять
+                  </option>
+                </select>
+                <p class="form__text">Периодичность автообновления курсов в таблице
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Дробных знаков:
+                </div>
+                <select class="form__select" name="count_char">
+                  <option class="form__option" value="0" selected="selected">нет
+                  </option>
+                  <option class="form__option" value="2">2
+                  </option>
+                  <option class="form__option" value="4">4
+                  </option>
+                  <option class="form__option" value="6">6
+                  </option>
+                  <option class="form__option" value="8">8
+                  </option>
+                </select>
+                <p class="form__text">Число знаков в дробной части числа
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Разд-ль целой части:
+                </div>
+                <select class="form__select" name="separator">
+                  <option class="form__option" value="1" selected="selected">точка .
+                  </option>
+                  <option class="form__option" value="2"> запятая ,
+                  </option>
+                </select>
+                <p class="form__text">Символ между целой и дробной частью числа
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Разд-ль разрядов:
+                </div>
+                <select class="form__select" name="separator_row">
+                  <option class="form__option" value="1" selected="selected">,(запятая)
+                  </option>
+                  <option class="form__option" value="2">пробел
+                  </option>
+                  <option class="form__option" value="3">`(апостроф)
+                  </option>
+                </select>
+                <p class="form__text">Символ, разделяющий группы цифр в целой части
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Шрифт сайта:
+                </div>
+                <select class="form__select" name="font_family">
+                  <option class="form__option" value="1" selected="selected">Arial
+                  </option>
+                  <option class="form__option" value="2">Tahoma
+                  </option>
+                  <option class="form__option" value="3">Verdana
+                  </option>
+                </select>
+                <p class="form__text">Используемый шрифт для всего сайта
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Выделение курсов:
+                </div>
+                <select class="form__select" name="font_style">
+                  <option class="form__option" value="1" selected="selected">полужирным
+                  </option>
+                  <option class="form__option" value="2">не выделять
+                  </option>
+                </select>
+                <p class="form__text">Выделение числовых значений курсов в таблице
+                </p>
+              </div>
+              <p class="notice notice_success">Настройки сохранены
+              </p>
+              <p class="notice notice_error">Настройки не сохранены
+              </p><input class="form__btn-send" type="submit" value="Cохранить настройки"/>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_login" id="modal_login">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <form class="form form_login" action="auth.php?action=login" method="POST">
+              <div class="form__item"><input class="form__field form__field_login" name="login" placeholder="Логин" type="text"/>
+                <label class="form__label form__label_error active">Неправильный логин или пароль
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass" placeholder="Пароль"/>
+              </div>
+              <div class="form__item"><a class="form__link" href="/reminder.html">Напомнить пароль</a>
+              </div>
+              <div class="form__item"><input class="form__btn-send" type="submit" value="Войти"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_reg" id="modal_reg">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <form class="form form_reg" action="auth.php?action=reg" method="POST">
+              <div class="form__item"><input class="form__field form__field_login" name="login" placeholder="Логин" type="text"/>
+                <label class="form__label form__label_error">Такой логин уже существует
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_mail" type="email" name="mail" placeholder="E-mail"/>
+                <label class="form__label form__label_error">Такой E-mail уже существует
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass_1" placeholder="Пароль"/>
+                <label class="form__label form__label_error">Пароли не совпадают
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass_2" placeholder="Повторите пароль"/>
+                <label class="form__label form__label_error">Пароли не совпадают
+                </label>
+              </div>
+              <div class="form__item"><input class="form__btn-send" type="submit" value="Регистрация"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__item"><a class="footer__link" href="#">Правила для обменников</a>
+            </div>
+            <div class="footer__item"><span class="footer__text">Связь: </span><a class="footer__link" href="mailto:support@polchange.ru">support@polchange.ru</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="/vendor/sprite/sprite.css"/>
+      <link rel="stylesheet" href="/css/style.css"/>
+      <script src="/vendor/jquery.min.js"></script>
+      <script src="/js/app.js"></script>
+    </div>
+  </body>
+</html>

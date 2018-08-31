@@ -1,0 +1,60 @@
+extends ../../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-2()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						+b.text-box
+							+e.title Вывод партнерских средств
+							+e.text Минимальная сумма для вывода – $1,00. Выплаты осуществляются в течение <b> 5-ти рабочих дней </b>, сразу после проверки Вашего аккаунта администратором.
+							+e.text Указать или сменить кошельки для выплат можно в разделе <a href="#"> Профиль </a>.
+
+							+b.FORM(action="withdraw.php?action=xxx" method="POST").form_withdraw#form_withdraw
+									+e.item
+										+e.SPAN.text Метод:
+										+e.SELECT.select(name='output_money')
+											+e.OPTION.option(value='1', selected='selected') Perfect Money USD (U1234567)
+											+e.OPTION.option(value='2') Perfect Money EUR (E1234567)
+											+e.OPTION.option(value='3') Payeer USD (P1234567)
+											+e.OPTION.option(value='4') Payeer EUR (P1234567)
+											+e.OPTION.option(value='5') Payeer RUB (P1234567)
+											+e.OPTION.option(value='6') Яндекс.Деньги RUB (4100101234567)
+											+e.OPTION.option(value='7') QIWI EUR (+79123456789) min. $1.10
+											+e.OPTION.option(value='8') QIWI RUB (+79123456789) min. $1.10
+											+e.OPTION.option(value='8') Bitcoin BTC (3EiCGnmNWDEVnu1...)
+									+e.item
+										+e.P.text Недостаточно средств для заказа вывода	
+									+e.item
+										+e.INPUT(type="submit" value="Заказать вывод $0,46" disabled="disabled").btn-send
+							+e.title Заявки на вывод
+
+							+b.TABLE.table(class="_striped _page-withdraw")
+								+e.THEAD.title
+									+e.THEAD.head
+										+e.TR.row
+											+e.TH.col_title Номер
+											+e.TH.col_title Дата
+											+e.TH.col_title Сумма
+											+e.TH.col_title Метод
+											+e.TH.col_title Кошелек
+											+e.TH.col_title Статус
+									+e.TBODY.body
+										+e.TR.row
+											+e.TD.col 38081
+											+e.TD.col 14.03.18, 12:28
+											+e.TD.col_money $2,79
+											+e.TD.col Perfect Money USD
+											+e.TD.col U1234567
+											+e.TD.col_status Выплачено

@@ -1,0 +1,87 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.text-box_gradient
+							+e.title Адин панель
+							+b.tab_admin
+								+e.nav
+									+e.item.active(id="tab__item_add-exchanger") Добавление обменника
+									+e.item(id="tab__item_get-money") Вывод средств
+								+e.content.active(data-id="tab__item_add-exchanger")
+									+b.FORM(action="admin.php?action=add-exchanger" method="POST").form_add-exchanger
+										+e.title Добавление обменника
+										+e.item
+											+e.INPUT(name="mail" placeholder="Email владельца").field_mail
+										+e.item
+											+e.INPUT(name="name" placeholder="Название").field_name
+										+e.item
+											+e.INPUT(name="link" placeholder="Ссылка").field_link
+										+e.item
+											+e.INPUT(name="start_work" placeholder="Дата начала работы в виде 2015-04").field_start-work
+										+e.item
+											+e.INPUT(name="code_contry" placeholder="Двухзначный код страны - RU/US").field_code-contry
+										+e.item
+											+e.INPUT(name="wmid" placeholder="WMID").field_wmid
+										+e.item
+											+e.INPUT(name="perfect_money" placeholder="ID аккаунта Perfect Money").field_perfect-money
+										+e.item
+											+e.INPUT(name="link_price" placeholder="Ссылка на XML файл с ценами").field_link_price
+										+e.item
+											+e.INPUT(name="cur" placeholder="Передача параметров cur").field_cur
+										+e.item
+											+e.INPUT(type="submit" value="Добавить").btn-send
+								
+								+e.content(data-id="tab__item_get-money")
+									+b.TABLE.table(class="_striped _withdrawing-money")
+										+e.THEAD.title
+											+e.THEAD.head
+												+e.TR.row
+													+e.TH.col_title №
+													+e.TH.col_title Дата
+													+e.TH.col_title Юзер
+													+e.TH.col_title Статус
+													+e.TH.col_title Сумма
+													+e.TH.col_title Кошелек
+											+e.TBODY.body
+												+e.TR.row
+													+e.TD.col 1
+													+e.TD.col 14.05 14:16:29
+													+e.TD.col Иван
+													+e.TD.col Исполнено
+													+e.TD.col 100$
+													+e.TD.col WMZ - 23576236
+												+e.TR.row
+													+e.TD.col 1
+													+e.TD.col 14.05 14:16:29
+													+e.TD.col Иван
+													+e.TD.col 
+														+e.A.link(href="#") Завершить
+													+e.TD.col 100$
+													+e.TD.col WMZ - 23576236
+												+e.TR.row
+													+e.TD.col 1
+													+e.TD.col 14.05 14:16:29
+													+e.TD.col Иван
+													+e.TD.col 
+														+e.A.link(href="#") Отменить
+													+e.TD.col 100$
+													+e.TD.col WMZ - 23576236
+
+									+b-pagination()

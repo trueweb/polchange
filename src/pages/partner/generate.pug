@@ -1,0 +1,65 @@
+extends ../../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-2()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						+b.text-box
+							+e.title Генерация кода партнерской ссылки
+
+							+b.FORM.form_page-generate(data-id-ref-user="?p=9784")#form_page-generate
+								+e.item
+									+e.title Страница мониторинга:
+								+e.item
+									+e.INPUT.radio(data-link="https://polchange.ru/" type="radio" name="page_monitor" value="1" checked="checked")
+									+e.SPAN.text Главная страница мониторинга
+								+e.item
+									+e.INPUT.radio_page-change(data-link="https://polchange.ru/" type="radio" name="page_monitor" value="2")
+									+e.SPAN.text Страница определенного обмена
+								+e.item
+									+e.SELECT.select(name='output_money_1')
+										+e.OPTION.option(value='1', selected='selected' data-currency="QIWI RUR") QIWI RUR
+										+e.OPTION.option(value='2' data-currency="WMZ") WMZ
+
+									SPAN на
+									 
+									+e.SELECT.select(name='output_money_2')
+										+e.OPTION.option(value='1', selected='selected' data-currency="QIWI RUR") QIWI RUR
+										+e.OPTION.option(value='2' data-currency="WMZ") WMZ
+								+e.item
+									+e.INPUT.radio(data-link="https://polchange.ru/partner/account/" type="radio" name="page_monitor" value="3")
+									+e.SPAN.text Страница "Партнерам"
+								+e.item
+									+e.INPUT.radio(data-link="https://polchange.ru/exchangers/" type="radio" name="page_monitor")
+									+e.SPAN.text Страница "Обменники"
+
+								+e.item
+									+e.title Вид ссылки:
+								+e.item
+									+e.INPUT.radio(data-link-view='linkRef' type="radio" name="variety_link" value="1" checked="checked")
+									+e.SPAN.text Только ссылка
+								+e.item
+									+e.INPUT.radio(data-link-view='<a target="_blank" href="linkRef">Надежные обменные пункты</a>' type="radio" name="variety_link" value="2")
+									+e.SPAN.text Ссылка в HTML-коде (для размещения на сайтах и блогах)
+								+e.item
+									+e.INPUT.radio(data-link-view='<a target="_blank" href="linkRef" onclick="this.href=`XlinkX`">Надежные обменники</a>' type="radio" name="variety_link" value="3")
+									+e.SPAN.text Скрытая ссылка в HTML-коде (пользователь не узнает о том, что ссылка партнерская)
+								+e.item
+									+e.INPUT.radio(data-link-view='[url="linkRef"]Обменные пункты, курсы валют[/url]' type="radio" name="variety_link" value="4")
+									+e.SPAN.text Ссылка в BBCode (для форумов и комментариев в блогах)
+
+								+e.title Код ссылки
+								+e.text Скопируйте код ссылки и вставьте в подходящее место на Вашем сайте:
+								+e.TEXTAREA.textarea 

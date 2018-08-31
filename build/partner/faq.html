@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="keywords" content="meta_k .........text"/>
+    <meta name="description" content="meta_d ......text"/>
+    <title>Doc title</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__col header__col_1"><a class="logo" href="/"><img class="logo__img" src="/img/logo.png" alt="" role="presentation"/></a>
+              <!--
+              +e.row
+              	+e.SPAN.col_1
+              		+e.IMG.img(src="/img/logo-graphik.png")
+              	+e.SPAN.col_2 POL
+              	+e.SPAN.col_3 CHANGE
+              
+              -->
+              <div class="btn btn_nav-main-toggle fa fa-bars" id="btn_nav-main-toggle">
+              </div>
+            </div>
+            <div class="header__col header__col_2"><a class="banner banner_header" href="/contests"><img class="banner__img" src="/img/banner/header-banner-1.gif" alt="" role="presentation"/></a><a class="banner banner_header" href="/contests"><img class="banner__img" src="/img/banner/header-banner-2.gif" alt="" role="presentation"/></a>
+            </div>
+            <div class="header__col header__col_3">
+              <!--+e.auth
+              +e.SPAN.text_auth Вы вошли как: 
+              +e.SPAN.text_user Андрей 
+              +b.A.btn_exit(href="auth.php?action=exit") Выйти
+              
+              -->
+              <button class="btn btn_login" id="btn_login">
+              </button>
+              <button class="btn btn_reg" id="btn_reg">
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="content">
+          <div class="content__col content__col_1">
+            <aside class="sidebar sidebar_left">
+              <div class="sidebar__row sidebar__row_1"><i class="sidebar__close fa fa-close"></i>
+              </div>
+              <!-- навигация партнёрам-->
+              <div class="sidebar__row sidebar__row_2">
+                <nav class="nav nav_sidebar-left" id="nav_sidebar-left">
+                  <ul class="nav__list" id="nav-list_main">
+                    <li class="nav__item active"><a class="nav__link" href="/partner/account.html">Партнерский аккаунт</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/stats.html">Привлеченные посетители</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/referals.html">Привлеченные рефералы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/withdraw.html">Вывод партнерских средств</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/generate.html">Код партнерской ссылки</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/promo.html">Баннеры</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/text.html">Текстовые материалы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/scripts.html">Скрипты и формы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/attract.html">Как привлекать посетителей</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/faq.html">Партнерский FAQ</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/rules.html">Условия партнерской программы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Профиль</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="auth.php?action=exit">Выход</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </aside>
+          </div>
+          <div class="content__col content__col_2">
+            <main class="main" role="main">
+              <!-- nav-->
+              <nav class="nav nav_main" id="nav_main">
+                <div class="nav__btn-burger nav__btn-burger_main" data-id="nav__main">
+                  <div class="nav__btn-burger-item">
+                  </div>
+                </div>
+                <ul class="nav__list" id="nav-list_main">
+                  <li class="nav__item active"><a class="nav__link" href="/index.html">Мониторинг</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/exchangers.html">Обменники</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/partner.html">Партнерам</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/bonuse.html">Бонусы</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/news.html">Новости</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/admin.html">Админка</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="text-box">
+                <h1 class="text-box__title">FAQ по партнерской программе
+                </h1>
+                <div class="toggler-more-info toggler-more-info_partner">
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Как работает партнерская программа?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle">Зарегистрировавшись в нашей партнерской программе, Вы получаете уникальный партнерский идентификатор <b>(?p=9784)</b>, который добавляется во все Ваши ссылки и в HTML-код. Вы можете размещать ссылки на любые страницы сервиса PolChange.ru на своем сайте, блоге, страничке, в сообществах и социальных сетях. Когда привлеченный рекламой посетитель кликает по Вашей партнерской ссылке и переходит к нам, система запоминает его и автоматически регистрирует, как привлеченного Вами посетителя (это означает, что клиент пришел именно от Вас). После того как посетитель начинает пользоваться сайтом, Вам начисляются партнерские вознаграждения. Вознаграждения будут "капать" на Ваш счет, даже если Вы не будете больше ничего делать – и это навсегда. Вы всегда сможете увидеть начисленные средства на своем счете в Вашем партнерском аккаунте, а также запросить их вывод (ограничиваясь лишь минимальным лимитом).
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Я недавний пользователь ПК. Подскажите, как скопировать промо-материалы на мой сайт?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Прежде всего, найдите необходимый Вам HTML-код в текстовом поле на страницах <a target="_blank" href="/partner/text">Текстовые материалы</a>, которые находятся в Вашем аккаунте. Этот код необходимо скопировать и вставить в исходный HTML-код Вашего сайта.</P>
+                        <P>Чтобы скопировать код, выделите все содержание текстового поля, нажав кнопкой мыши в любом месте текстового поля. После выбора кода все содержание текстового поля будет выделено синим цветом.</P>
+                        <P>Затем в браузере в меню "Правка" выберите команду "Копировать", чтобы скопировать выделенный код. Если вы не хотите сразу же вставлять код в исходный HTML-код своего сайта, его можно вставить в другое приложение (например, в Блокнот).</P>
+                        <P>Теперь рассмотрим вставку кода в исходный HTML-код Вашего сайта.</P>
+                        <P>Для показа промо-материалов на своем веб-сайте очень важно скопировать рекламный код в том виде, в котором он отображается на страницах в Вашем аккаунте, и вставить его непосредственно в исходный HTML-код своих веб-страниц без каких-либо изменений. Изменение рекламного кода может привести к ошибкам на Вашей странице.</P>
+                        <P>После копирования кода вернитесь к рабочему столу и откройте HTML-редактор. Открыв исходный HTML-код, выберите место, в которое нужно вставить свой рекламный код, после чего выберите "Вставить" в меню "Правка".</P>
+                        <P>После добавления кода на веб-страницу(ы) следует сохранить изменения и загрузить или опубликовать обновленные страницы на сервере. При возникновении проблем с загрузкой страниц на сервер свяжитесь с поставщиком услуг веб-хостинга.</P>
+                        <P>При правильном добавлении кода промо-материал(ы) на Вашем сайте должны появиться сразу.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Для размещения баннера мне нужен URL изображения. Как его получить?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Вы можете скачать файл баннера и разместить его на своем сайте – так баннеры будут быстрее загружаться. Загрузить файл можно нажав на ссылку "Скачать баннер", которая находится под кодом интересующего Вас баннера.</P>
+                        <P>Если же Вам нужен адрес изображения для загрузки именно с нашего сайта, вы можете получить его из кода баннера. Для этого скопируйте предлагаемый код баннера в какой-нибудь текстовый редактор, а затем оттуда скопируйте ссылку на файл баннера.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Сколько я буду зарабатывать, участвуя в вашей партнерской программе?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Это зависит от многих факторов, таких как:</P>
+                        <UL>
+                          <LI>Посещаемость веб-сайтов, где Вы размещаете о нас информацию;</LI>
+                          <LI>Соответствие тематики сайта той целевой аудитории, которая может заинтересоваться сервисом мониторинга обменников. Проще говоря, не стоит расчитывать на большое количество переходов по партнерской ссылке, размещенной на сайте, посвященном, например, разведению попугаев. Участие в партнерской программе подойдет в первую очередь тем, кто имеет выход на аудиторию в тех нишах, которые связаны с электронными деньгами, сайтостроением, инфобизнесом, фрилансом, программированием и другим подобным темам;</LI>
+                          <LI>Правильная подача информации. Например, мало кого привлечет одна лишь ссылка "обмен валют" без описаний где-нибудь в углу веб-страницы.</LI>
+                        </UL>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Сколько уровней в вашей партнерской программе? Оплачивается ли привлечение новых партнеров?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Наша партнерская программа трехуровневая:</P>
+                        <UL>
+                          <LI><b>1-й уровень.</b> Каждый посетитель, перешедший по Вашей партнерской ссылке и воспользовавшийся мониторингом, оплачивается в соответствии с основными правилами партнерской программы.</LI>
+                          <LI><b>2-й уровень.</b> Если посетитель, числящийся за Вами зарегистрировался как партнер, то с каждой заказанной им выплатой партнерских средств Вы будете получать дополнительно 30% от заказанной суммы.</LI>
+                          <LI><b>3-й уровень.</b> Если посетитель, числящийся за приведенным Вами партнером зарегистрировался как партнер, то с каждой заказанной им выплатой партнерских средств Вы будете получать дополнительно 10% от заказанной суммы.</LI>
+                        </UL>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Если я поставлю свою партнерскую ссылку в подпись на форуме, будут ли учитываться переходы и все остальные условия ПП?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Да, переходы учитываться будут.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Будут ли учитываться переходы пользователей, если я буду рекламировать свою партнерскую ссылку в чатах Skype, WhatsApp, Viber, ICQ и т.п.?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Нет, такие пользователи за партнером учитываться не будут, т.к. в нашей партнерской программе учитываются только те переходы, которые были осуществлены с какого-либо сайта.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">На моем сайте уже установлены другие партнерские программы. Могу ли я быть вашим партнером?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Да, можете. У нас нет ограничений на работу с другими партнерскими программами.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Я использую сокращатель ссылок, чтобы скрыть партнерскую ссылку. В этом нет нарушения?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Использование сокращателей для партнерских ссылок не является нарушением. Но мы не рекомендуем использовать сервисы сокращения ссылок т.к. проблема может возникнуть в другом – некоторые из них заменяют параметр "referer" на адрес сокращенной ссылки либо вовсе не передают этот параметр. Таким образом становится неизвестно с какого сайта перешел посетитель. Сервисы сокращения ссылок, которые заменяют параметр "referer" находятся у нас в черном списке, поэтому переходы по таким ссылкам учитываться не будут. В случае, когда сокращатель не передает "referer", такие переходы также засчитаны не будут.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Подходит ли мой сайт для участия в партнерской программе?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Мы приветствуем любые сайты, которые не противоречат условиям нашей партнерской программы. Посмотреть список условий можно  <a target="_blank" href="/partner/rules">здесь</a> (пункт 7).</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Я уверен, что по моей ссылке перешло несколько человек, но деньги за них начислены не были. Почему?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Мы приветствуем любые сайты, которые не противоречат условиям нашей партнерской программы. Посмотреть список условий можно  <a target="_blank" href="/partner/rules">здесь</a> (пункт 7).</P>
+                        <P>Исходя из наших <a target="_blank" href="/partner/rules">условий</a>, можно составить следующий список возможных причин, по которым Ваши посетители не были оплачены:</P>
+                        <UL>
+                          <LI>С IP-адреса Вашего посетителя уже совершался переход на наш сайт по чей-либо партнерской ссылке (не Вашей) в течение последних 365 суток.</LI>
+                          <LI>Посетитель перешел по Вашей ссылке и сразу же ушел с сайта. Начисления за посетителей начинаются со второй посещенной страницы сайта. В любом случае, в браузер посетителя, пришедшего по Вашей патнерской ссылке, устанавливается cookie с вашим партнерским идентификатором. Этот посетитель будет числиться за Вами, и его повторное посещение сайта (даже без перехода по партнерской ссылке) будет оплачиваться.</LI>
+                          <LI>Браузер привлеченного Вами посетителя не передает параметр "referer". Заметьте, этот параметр также не будет передаваться, если партнерская ссылка была введена в браузер вручную (без клика по партнерской ссылке).</LI>
+                          <LI>Посетитель пришел с сайта, занесенного в черный список нашей партнерской программы (посетители с таких сайтов не оплачиваются). С причинами, по которым сайты попадают в наш список неоплачиваемых можно ознакомиться на странице с <a target="_blank" href="/partner/rules">условиями</a> (пункт 7).</LI>
+                          <LI>Посетитель перешел на сайт лишь для получения бесплатного бонуса. Такие посетители нам малоинтересны, поэтому не стоит рекламировать бесплатные бонусы на нашем сайте с использованием партнерской ссылки.</LI>
+                        </UL>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Что означает статистика "Прямые переходы" и "С сайтов из черного списка"?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>В нашей партнерской программе не учитываются переходы пользователей без параметра "referer", а также если переход был совершен с заблокированного ранее сайта. Примеры возможных случаев:</P>
+                        <UL>
+                          <LI>Браузер привлеченного Вами посетителя не передает параметр "referer".</LI>
+                          <LI>Партнерская ссылка была введена пользователем в адресную строку браузера вручную, без клика по ссылке.</LI>
+                          <LI>Переход по партнерской ссылке был произведен не из браузера, а, например, из какого-либо мессенджера или иного приложения.</LI>
+                          <LI>Переход пользователя был произведен с сайта, который запрещает передачу параметра "referer" (например, указан специальный meta-тег).</LI>
+                          <LI>Использовался ссылочный сокращатель, который не передает "referer", либо заменяет реальный "referer" исходной страницы на адрес сокращенной ссылки.</LI>
+                          <LI>Пользователь перешел с сайта, занесенного в черный список нашей партнерской программы. С причинами, по которым сайты попадают в наш список неоплачиваемых можно ознакомиться на странице с <a target="_blank" href="/partner/rules">условиями</a> (пункт 7).</LI>
+                        </UL>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Я перешел по своей партнерской ссылке с другого компьютера, но количество переходов в моем аккаунте не изменилось. Почему?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Мы оставляем за собой право не засчитывать и не оплачивать те переходы, которые считаем недействительными (накрученные переходы). Не стоит пытаться увеличивать начисления, переходя по свой ссылке с другого компьютера, или просить знакомых "просто перейти по моей ссылке". Такие переходы ради накрутки статистически легко вычислимы и не будут засчитаны. В целом не засчитывается небольшой процент от общего числа переходов и на заработки партнеров, которые не пытаются обмануть, он не оказывает значительного влияния.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Как вы отслеживаете накрутчиков среди партнеров?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Большинство видов накрутки определяется нашей системой автоматически и администратору выдается список подозрительных партнеров. По каждому случаю администратор разбирается отдельно. Кроме того, при выплатах партнерам каждый аккаунт проверяется на предмет накруток. Для этого у нас есть вся необходимая статистика.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Не могу войти в свой аккаунт партнера. Пишет "Неверное сочетание логина и пароля". Что делать?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Убедитесь, что при вводе пароля у Вас не включена русская раскладка клавиатуры или Caps Lock. Если Вы точно помните только логин, воспользуйтесь функцией <a target="_blank" href="/forgot">Напоминания пароля</a>. Пароль будет выслан на Ваш e-mail, указанный при регистрации.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Как выплачиваются заработанные деньги?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Партнерские выплаты производятся через платежные системы Perfect Money (USD, EUR), Payeer (USD, EUR, RUB), Яндекс.Деньги, QIWI (USD, EUR, RUB), Bitcoin, Advanced Cash (USD, EUR, RUB), PayPal (USD) по выбору партнера. После подачи заявки на выплату, в течение 5 рабочих дней Ваш аккаунт будет проверен нашим администратором на наличие попыток накрутки. Не беспокойтесь, если выплата Вашего партнерского вознаграждения затянулась – администратор видит все заявки и обработает Вашу в любом случае.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Почему заблокирован мой партнерский аккаунт?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Наш администратор блокирует аккаунты, по которым замечает явное создание фиктивного потока переходов. Нам нет смысла блокировать порядочных участников партнерской программы, т.к. нам выгодно привлечение реального трафика с помощью партнеров. Но именно реального трафика, платить же за фиктивный мы не можем себе позволить, т.к. для нас это убыток. Других причин для блокировки партнерского аккаунта не бывает. Восстановление аккаунта невозможно – решение о блокировке является окончательным во всех случаях. Дальнейшая работа с такими партнерами (накрутчиками) нам не интересна.</P>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toggler-more-info__item">
+                    <div class="toggler-more-info__row toggler-more-info__row_1">
+                      <div class="toggler-more-info__btn-toggle">Можно ли ставить партнерские ссылки, ведущие сразу на список обменников определенного направления (https://www.polchange.ru/wmz-to-wmr.html?p=9784)?
+                      </div><i class="toggler-more-info__icon toggler-more-info__icon_toggle fa fa-angle-down"></i>
+                    </div>
+                    <div class="toggler-more-info__row toggler-more-info__row_2">
+                      <div class="toggler-more-info__box-toggle"> 
+                        <P>Да, такой вид ссылок возможен, мы даже его <a target="_blank" href="/partner/generate">рекомендуем</a>, но при одном условии – текст ссылки должен соответствовать странице, на которую Вы ссылаетесь. Пример:</P><textarea class="toggler-more-info__textarea"><a target="_blank" href="https://www.polchange.ru/wmz-to-wmr.html?p=9784">Лучшие курсы обмена WMZ на WMR</a></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div class="btn btn_show-currency-selection" id="btn_show-currency-selection">Доступные напраления обмена
+      </div>
+      <div class="social-btn social-btn_main-2">
+        <div class="social-btn__list">
+          <div class="social-btn__item social-btn__item_tw"><a class="social-btn__link fa fa-twitter" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_gg"><a class="social-btn__link fa fa-google" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_fb"><a class="social-btn__link fa fa-facebook" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_yb"><a class="social-btn__link fa fa-youtube" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_instagram"><a class="social-btn__link fa fa-instagram" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_vk"><a class="social-btn__link fa fa-vk" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_rss"><a class="social-btn__link fa fa-rss" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_history" id="modal_history">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <div class="text-box">
+              <h3 class="text-box__title">История переходов на обменные пункты
+              </h3>
+              <p class="text-box__text">Здесь приведен список произведенных вами ранее переходов на обменные пункты. Показан курс обмена и резерв валюты на момент совершения перехода с мониторинга на обменный пункт.
+              </p>
+            </div>
+            <div class="modal__box-scroll">
+              <table class="table table_modal-history table_striped">
+                <thead class="table__title">
+                  <thead class="table__head">
+                    <tr class="table__row">
+                      <th class="table__col table__col_title">Дата
+                      </th>
+                      <th class="table__col table__col_title">Обменник
+                      </th>
+                      <th class="table__col table__col_title">Направление и курс обмена
+                      </th>
+                      <th class="table__col table__col_title">Резерв
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="table__body">
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                  </tbody>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_setings" id="modal_settings">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <div class="text-box">
+              <h3 class="text-box__title">Персональные настройки
+              </h3>
+              <p class="text-box__text">Здесь вы можете произвести некоторые настройки сайта BestChange.ru. Данные параметры будут храниться в cookies вашего браузера. При посещении сайта с другого компьютера или браузера вам будет необходимо сохранить эти настройки заново.
+              </p>
+            </div>
+            <form class="form form_modal-settings" action="script.php?action=settings" id="form_modal-settings">
+              <div class="form__item">
+                <div class="form__name">Обновление:
+                </div>
+                <select class="form__select" name="time_up">
+                  <option class="form__option" value="15" selected="selected">через 15 секунд
+                  </option>
+                  <option class="form__option" value="30">через 30 секунд
+                  </option>
+                  <option class="form__option" value="45">через 45 секунд
+                  </option>
+                  <option class="form__option" value="60">через минуту
+                  </option>
+                  <option class="form__option" value="120">через 2 минуты
+                  </option>
+                  <option class="form__option" value="180">через 3 минуты
+                  </option>
+                  <option class="form__option" value="300">через 5 минут
+                  </option>
+                  <option class="form__option" value="0">не обновлять
+                  </option>
+                </select>
+                <p class="form__text">Периодичность автообновления курсов в таблице
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Дробных знаков:
+                </div>
+                <select class="form__select" name="count_char">
+                  <option class="form__option" value="0" selected="selected">нет
+                  </option>
+                  <option class="form__option" value="2">2
+                  </option>
+                  <option class="form__option" value="4">4
+                  </option>
+                  <option class="form__option" value="6">6
+                  </option>
+                  <option class="form__option" value="8">8
+                  </option>
+                </select>
+                <p class="form__text">Число знаков в дробной части числа
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Разд-ль целой части:
+                </div>
+                <select class="form__select" name="separator">
+                  <option class="form__option" value="1" selected="selected">точка .
+                  </option>
+                  <option class="form__option" value="2"> запятая ,
+                  </option>
+                </select>
+                <p class="form__text">Символ между целой и дробной частью числа
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Разд-ль разрядов:
+                </div>
+                <select class="form__select" name="separator_row">
+                  <option class="form__option" value="1" selected="selected">,(запятая)
+                  </option>
+                  <option class="form__option" value="2">пробел
+                  </option>
+                  <option class="form__option" value="3">`(апостроф)
+                  </option>
+                </select>
+                <p class="form__text">Символ, разделяющий группы цифр в целой части
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Шрифт сайта:
+                </div>
+                <select class="form__select" name="font_family">
+                  <option class="form__option" value="1" selected="selected">Arial
+                  </option>
+                  <option class="form__option" value="2">Tahoma
+                  </option>
+                  <option class="form__option" value="3">Verdana
+                  </option>
+                </select>
+                <p class="form__text">Используемый шрифт для всего сайта
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Выделение курсов:
+                </div>
+                <select class="form__select" name="font_style">
+                  <option class="form__option" value="1" selected="selected">полужирным
+                  </option>
+                  <option class="form__option" value="2">не выделять
+                  </option>
+                </select>
+                <p class="form__text">Выделение числовых значений курсов в таблице
+                </p>
+              </div>
+              <p class="notice notice_success">Настройки сохранены
+              </p>
+              <p class="notice notice_error">Настройки не сохранены
+              </p><input class="form__btn-send" type="submit" value="Cохранить настройки"/>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_login" id="modal_login">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <form class="form form_login" action="auth.php?action=login" method="POST">
+              <div class="form__item"><input class="form__field form__field_login" name="login" placeholder="Логин" type="text"/>
+                <label class="form__label form__label_error active">Неправильный логин или пароль
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass" placeholder="Пароль"/>
+              </div>
+              <div class="form__item"><a class="form__link" href="/reminder.html">Напомнить пароль</a>
+              </div>
+              <div class="form__item"><input class="form__btn-send" type="submit" value="Войти"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_reg" id="modal_reg">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <form class="form form_reg" action="auth.php?action=reg" method="POST">
+              <div class="form__item"><input class="form__field form__field_login" name="login" placeholder="Логин" type="text"/>
+                <label class="form__label form__label_error">Такой логин уже существует
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_mail" type="email" name="mail" placeholder="E-mail"/>
+                <label class="form__label form__label_error">Такой E-mail уже существует
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass_1" placeholder="Пароль"/>
+                <label class="form__label form__label_error">Пароли не совпадают
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass_2" placeholder="Повторите пароль"/>
+                <label class="form__label form__label_error">Пароли не совпадают
+                </label>
+              </div>
+              <div class="form__item"><input class="form__btn-send" type="submit" value="Регистрация"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__item"><a class="footer__link" href="#">Правила для обменников</a>
+            </div>
+            <div class="footer__item"><span class="footer__text">Связь: </span><a class="footer__link" href="mailto:support@polchange.ru">support@polchange.ru</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="/vendor/sprite/sprite.css"/>
+      <link rel="stylesheet" href="/css/style.css"/>
+      <script src="/vendor/jquery.min.js"></script>
+      <script src="/js/app.js"></script>
+    </div>
+  </body>
+</html>

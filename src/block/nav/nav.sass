@@ -1,0 +1,126 @@
+.nav
+	&_main
+		.nav
+			margin-bottom: 15px
+			&__list
+				display: flex
+				background: linear-gradient(to bottom, $color-5, $color-6)
+				box-shadow: 0 0 5px rgba(0,0,0,0.5)
+				border-radius: 5px 0 0 5px
+				position: relative
+				&:after
+					position: absolute
+					content: ""
+					display: inline-block
+					top: 0
+					right: -24px
+					height: 100%
+					width: 24px
+					background: linear-gradient(to bottom, $color-5, $color-6)
+					border-radius: 0 5px 5px 0
+					border-right: 1px solid #261e1a
+				&:before
+					position: absolute
+					content: ""
+					display: inline-block
+					top: -9px
+					right: -24px
+					border: 6px solid transparent
+					border-bottom: 6px solid #261e1a
+					border-left: 6px solid #261e1a
+			&__link
+				color: #fff
+				text-shadow: rgba(0,0,0,0.5) 0 0 1px
+				display: inline-block
+				padding: 12px
+				&:hover
+					color: #fff
+			&__item
+				border-right: 1px solid rgba(0, 0, 0, .3)
+				width: 16.66%
+				text-align: center
+				position: relative
+				&:first-child
+					border-radius: 5px 0 0 5px
+				&:last-child
+					border-right: 0
+				&.active,
+				&:hover
+					//background-color: rgba(0, 0, 0, .4)
+					background: linear-gradient(to bottom, $color-7, $color-8)
+			&__btn-burger
+				display: none
+				height: 50px
+				width: 50px
+				cursor: pointer
+				position: relative
+				z-index: 1001
+				box-sizing: border-box
+				background-color: rgba($color-1, 1)
+				transition-duration: 0.3s, 0.3s
+				border: 2px solid rgba($color-1, .8)
+				&:hover
+					background-color: rgba($color-1, .8)
+				&-item
+					display: block
+					width: 80%
+					height: 6px
+					background-color: #fff
+					&::after,
+					&::before
+						position: absolute
+						content: ""
+						display: block
+						width: 80%
+						height: 5px
+						background-color: #fff
+					&::after
+						top: 8px
+					&::before
+						bottom: 8px
+
+	@if $adaptive
+		@media #{$pc}
+			&_main
+				.nav
+					&__list
+						&:before,
+						&:after
+							display: none
+
+	@if $adaptive
+		@media #{$phone}
+			&_main
+				display: none
+				&.active
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					display: flex
+					.nav
+						&__list
+							width: 100%
+							flex-wrap: wrap
+							&:before,
+							&:after
+								display: none
+						&__item
+							width: 100%
+
+	&_sidebar-left
+		border-radius: 8px
+		border: 2px solid $color-4
+		overflow: hidden
+		.nav
+			&__item
+				padding: 3px 3px 3px 10px
+				border-bottom: 2px solid $color-4
+				&:nth-child(2n)
+					background-color: $color-2
+				&:last-child
+					border: 0px
+				&.active
+					background-color: $color-5
+			&__link
+				color: #fff

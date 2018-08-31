@@ -1,0 +1,39 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.text-box_gradient
+							+b.list-news
+								+e.item
+									+e.col_1
+										+e.box-img
+											+e.IMG(src="img/banner.png").img
+									+e.col_2
+										+e.H2.title Новые криптовалюты
+										+e.P.text Сегодня мы добавили Bitcoin Gold, IOTA, Cardano, TRON, Stellar, EOS, Bytecoin, Lisk, NEO.
+
+								+e.item
+									+e.col_1
+										+e.box-img
+											+e.IMG(src="img/banner.png").img
+									+e.col_2
+										+e.H2.title Новые криптовалюты
+										+e.P.text Используйте эту форму, если вы хотите задать нам вопрос, или сообщить о проблеме или ошибке. Пожалуйста, делайте ваше сообщение как можно более детализированным, это поможет нам решить проблему намного быстрее. Помните, если ваш e-mail адрес неправилен, мы не сможем вам ответить.
+
+							+b-pagination

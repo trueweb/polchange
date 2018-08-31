@@ -1,0 +1,273 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.exchanger-info
+							+e.row_1
+								+e.col_1
+									+e.box-img
+										+e.IMG(src="/img/site-exchenger.jpg").img
+								+e.col_2
+									+e.box-text
+										+e.H2.title Обменный пункт 100Монет
+											+e.SPAN.status_active активен
+											+e.SPAN.status_unavailable недоступен
+											+e.SPAN.status_inactive не активен
+										+e.A(href="").link_1 Перейти на сайт 100Монет
+										+e.A(href="").link_1 Информация от администратора
+							+e.row_2
+								+e.info
+									+e.item
+										+e.name WebMoney BL:
+										+e.value -
+									+e.item
+										+e.name Perfect Money TS:
+										+e.value 238.10
+									+e.item
+										+e.name Сумма резервов:
+										+e.value 	$1'063'337
+									+e.item
+										+e.name Возраст:
+										+e.value 4 года
+									+e.item
+										+e.name Страна:
+										+e.value 
+											+e.IMG(src="/img/us.png").img_contry
+											SPAN Литва
+
+								+e.info
+									+e.item
+										+e.name Отзывы 100Монет:
+										+e.value
+									+e.item
+										+e.name BestChange:
+										+e.value 
+											+e.SPAN.reviews_dislike 0
+											SPAN /
+											+e.SPAN.reviews_like 1667
+									+e.item
+										+e.name WMID:
+										+e.value –
+									+e.item
+										+e.name MyWOT:
+										+e.value
+											+e.SPAN.reviews_dislike 0
+											SPAN /
+											+e.SPAN.reviews_like 1
+									+e.item
+										+e.name WM Advisor:
+										+e.value 
+											+e.SPAN.reviews_dislike 0
+											SPAN /
+											+e.SPAN.reviews_like 1
+								
+						+b.list-comment
+							+e.box-wrapper
+								+e.btn_add-new-review
+									+e.I.icon_plus.fa.fa-plus-circle
+									+e.SPAN.text Добавить отзыв
+									+e.I.icon_arrow
+									
+								+e.box-add-new-review
+									+b.FORM(action="comment.php?action=add" method="POST").form_comment-add#form_comment-add
+										+e.item
+											+e.SPAN.name Ваше имя:
+											+e.INPUT(name="name").field_mail
+										+e.item
+											+e.SPAN.name *Ваш E-mail:
+											+e.INPUT(name="mail" required="required").field_mail
+										+e.item
+											+e.SPAN.name 
+											+e.text На e-mail придет письмо с данными для подтвержения и управления отзывом
+										+e.item
+											+e.SPAN.name *Отзыв:
+											+e.TEXTAREA(name="comment" required="required").textarea
+
+										// Начало измениений
+										+e.item
+											+e.SPAN.name Тип отзыва:
+											+e.box-radio
+												+e.LABEL(for="review_like").label_like Положытельный
+													+e.INPUT.radio(selected="selected" id="review_like" type="radio" name="review")
+
+											+e.LABEL(for="review_comment").label_comment Комментарий
+												+e.INPUT.radio(id="review_comment" type="radio" name="review" value="1" checked="checked")
+
+											+e.LABEL(for="review_dislike").label_dislike Претензия
+												+e.INPUT.radio(id="review_dislike" type="radio" name="review" value="1")
+										+e.info-dislike
+											+e.item
+													+e.SPAN.name
+													+e.box-text
+														+e.info-dislike-title Оставлять отзывы могут только авторизованные пользователи
+														+e.text Используйте этот тип отзыва только в случае, если вы до сих пор не получили средства от обменника WW-Pay, а положенный срок уже прошел. После получения средств по обмену либо возврата претензия должна быть снята.<br><br>
+
+														+e.text При этом обязательно укажите ваш <b>номер обмена (заявки)</b> – это поможет администратору WW-Pay скорее решить проблему.<br><br>
+
+														+e.text Если вам просто не понравилось обслуживание в WW-Pay и вы хотите написать об этом – выберите тип отзыва <label for="review_comment">Комментарий</label>.
+											+e.item
+												+e.SPAN.name * Номер обмена:
+												+e.INPUT.field(name="numder_order" value="0")
+
+										+e.item
+											+e.SPAN.name
+											+e.INPUT.btn-send(type="submit" value="Дать отзыв")
+										// Конец измениений
+
+								// comment
+								+e.item_comment
+									+e.item-box
+										+e.row_1
+											+e.col_1
+												+e.I.icon.fa.fa-user
+												+e.SPAN.name-user Вадим
+
+												+e.IMG(src="/img/us.png").img_contry
+												+e.SPAN.ip 31.23.187.*
+												+e.SPAN.date (25 мая 2018 | 16:53)
+											+e.col_2
+												+e.I.icon_type.fa.fa-comment
+										+e.row_2
+											+e.P.text Деньги ушли, но не пришли при выводе с вебмани на карту приват, поддержка не отвечает! Деньги отправил - висит ошибка отправки уже 4 часа. Назад не вернулись! Через другие обменники все получается. В первый раз пробовал этот обменник и не рад, что связался! Верните деньги или переведите нормально. В чем ошибка-то?
+										+e.row_3
+											+e.col_1
+											+e.col_2
+												+e.SPAN.btn_add Комментировать
+												+e.A(href="comment.php?action=delete&id=1").btn_delete Удалить
+										+e.row_4
+											+b.FORM.form_list-comment(action="comment.php?action=add&id=1")
+												+e.TEXTAREA.textarea(placeholder="Комментарий" name="comment")
+												+e.INPUT(type="submit" value="Добавить").btn-send
+
+								// comment
+								+e.item_like
+									+e.item-box
+										+e.row_1
+											+e.col_1
+												+e.I.icon.fa.fa-user
+												+e.SPAN.name-user Вадим
+
+												+e.IMG(src="/img/us.png").img_contry
+												+e.SPAN.ip 31.23.187.*
+												+e.SPAN.date (25 мая 2018 | 16:53)
+											+e.col_2
+												+e.I.icon_type.fa.fa-thumbs-up
+										+e.row_2
+											+e.P.text Спасибо, деньги пришли быстро, обмен вебмани на приват, и что очень радует перевод от частного лица, а не как у некоторых по номеру заявки.
+										+e.row_3
+											+e.col_1
+												+e.SPAN.btn_more 
+													+e.SPAN.text-btn-more Развернуть (1)
+													+e.I.icon_more.fa.fa-angle-down
+
+											// вложенный comment
+											+e.nested
+												+e.item_comment
+													+e.item-box
+														+e.row_1
+															+e.col_1
+																+e.I.icon.fa.fa-user
+																+e.SPAN.name-user Вадим
+
+																+e.IMG(src="/img/us.png").img_contry
+																+e.SPAN.ip 31.23.187.*
+																+e.SPAN.date (25 мая 2018 | 16:53)
+															+e.col_2
+																+e.I.icon_type.fa.fa-comment
+														+e.row_2
+															+e.P.text 10 минут, круто. буду пользоваться постоянно. Спасибо
+														+e.row_3
+															+e.col_2
+																+e.A(href="comment.php?action=delete&id=1").btn_delete Удалить
+
+												+e.item_comment
+													+e.item-box
+														+e.row_1
+															+e.col_1
+																+e.I.icon.fa.fa-user
+																+e.SPAN.name-user Вадим
+
+																+e.IMG(src="/img/us.png").img_contry
+																+e.SPAN.ip 31.23.187.*
+																+e.SPAN.date (25 мая 2018 | 16:53)
+															+e.col_2
+																+e.I.icon_type.fa.fa-comment
+														+e.row_2
+															+e.P.text 10 минут, круто. буду пользоваться постоянно. Спасибо
+														+e.row_3
+															+e.col_1
+															+e.col_2
+																+e.A(href="comment.php?action=delete&id=1").btn_delete Удалить
+
+												+e.item_comment
+													+e.item-box
+														+e.row_1
+															+e.col_1
+																+e.I.icon.fa.fa-user
+																+e.SPAN.name-user Вадим
+
+																+e.IMG(src="/img/us.png").img_contry
+																+e.SPAN.ip 31.23.187.*
+																+e.SPAN.date (25 мая 2018 | 16:53)
+															+e.col_2
+																+e.I.icon_type.fa.fa-comment
+														+e.row_2
+															+e.P.text 10 минут, круто. буду пользоваться постоянно. Спасибо
+														+e.row_3
+															+e.col_1
+															+e.col_2
+																+e.A(href="comment.php?action=delete&id=1").btn_delete Удалить
+											// вложенный comment
+
+											+e.col_2
+												+e.SPAN.btn_add Комментировать
+												+e.A(href="comment.php?action=delete&id=1").btn_delete Удалить
+
+										+e.row_4
+											+e.col_1
+												+e.P.notice Не оставляйте комментарий если у Вас нет претензий
+											+b.FORM.form_list-comment(action="comment.php?action=add&id=1")
+												+e.TEXTAREA.textarea(placeholder="Комментарий" name="comment")
+												+e.INPUT(type="submit" value="Добавить").btn-send
+
+								// comment
+								+e.item_dislike
+									+e.item-box
+										+e.row_1
+											+e.col_1
+												+e.I.icon.fa.fa-user-md
+												+e.SPAN.name-user_admin Администратор
+
+												+e.IMG(src="/img/us.png").img_contry
+												+e.SPAN.ip 31.23.187.*
+												+e.SPAN.date (25 мая 2018 | 16:53)
+											+e.col_2
+												+e.I.icon_type.fa.fa-thumbs-down
+										+e.row_2
+											+e.P.text Здравствуйте, сегодня произвёл обмен яндекс деньги на вебмани. Пишет произошла ошибка. Деньги с яндекс кошелька снялись полностью, на вебмани ничего не поступило. С 5 утра пишу в онлайн чат, написал письмо на почту, никто не отвечает.
+										+e.row_3
+											+e.col_1
+
+											+e.col_2
+												+e.SPAN.btn_add Комментировать
+												+e.A(href="comment.php?action=delete&id=1").btn_delete Удалить
+										+e.row_4
+											+b.FORM.form_list-comment(action="comment.php?action=add&id=1")
+												+e.TEXTAREA.textarea(placeholder="Комментарий" name="comment")
+												+e.INPUT(type="submit" value="Добавить").btn-send

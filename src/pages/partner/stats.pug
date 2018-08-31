@@ -1,0 +1,72 @@
+extends ../../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-2()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						+b.text-box
+							+e.title Статистика переходов
+							+e.text Здесь отображена полная статистика по Вашему партнерскому аккаунту. Каждая запись – это произведенное действие посетителя, привлеченного Вами.
+							+e.text Примечание: статистика обновляется каждые 5 минут
+
+							+b.TABLE.table(class="_striped _page-stats")
+								+e.THEAD.title
+									+e.THEAD.head
+										+e.TR.row
+											+e.TH.col_title Дата
+											+e.TH.col_title IP
+											+e.TH.col_title Источник
+											+e.TH.col_title Информация
+											+e.TH.col_title Описание
+											+e.TH.col_title Оплата
+									+e.TBODY.body
+										+e.TR.row
+											+e.TD.col 16.05, 05:12
+											+e.TD.col 85.26.241.*
+											+e.TD.col_source
+												+e.A(href="").link m.facebook.com
+											+e.TD.col Firefox, Mac
+											+e.TD.col Новый
+											+e.TD.col_payment $0.04
+
+										+e.TR.row
+											+e.TD.col 16.05, 05:12
+											+e.TD.col 85.26.241.*
+											+e.TD.col_source
+												+e.A(href="").link m.facebook.com
+											+e.TD.col Firefox, Mac
+											+e.TD.col Новый
+											+e.TD.col_payment $0.04
+
+										+e.TR.row
+											+e.TD.col 16.05, 05:12
+											+e.TD.col 85.26.241.*
+											+e.TD.col_source
+												+e.A(href="").link m.facebook.com
+											+e.TD.col Firefox, Mac
+											+e.TD.col Новый
+											+e.TD.col_payment $0.04
+
+										+e.TR.row
+											+e.TD.col 16.05, 05:12
+											+e.TD.col 85.26.241.*
+											+e.TD.col_source
+												+e.A(href="").link m.facebook.com
+											+e.TD.col Firefox, Mac
+											+e.TD.col Новый
+											+e.TD.col_payment $0.04
+									
+							+b-pagination()
+										

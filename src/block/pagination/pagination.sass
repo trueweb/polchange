@@ -1,0 +1,21 @@
+.pagination
+	display: flex
+	align-items: center
+	margin-top: 15px
+	&__list
+		display: flex
+		margin: 2px
+	&__link
+		color: $color-1
+		border-bottom: 0 !important
+		&.arrow
+			margin: 0 5px
+	&__item
+		padding: 2px 5px
+		border: 1px solid $color-1
+		margin: 2px
+		color: #fff
+		&.active
+			background-color: $color-1
+			.pagination__link
+				color: #fff

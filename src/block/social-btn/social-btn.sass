@@ -1,0 +1,68 @@
+.social-btn
+	display: flex
+	&__list
+		display: flex
+	&__item
+		height: 32px
+		width: 32px
+		&_tw
+			background-color: #55a4da
+		&_gg
+			background-color: #de4a36
+		&_fb
+			background-color: #385899
+		&_yb
+			background-color: #c01c19
+		&_instagram
+			background-color: #c43085
+		&_vk
+			background-color: #4a76a8
+		&_rss
+			background-color: #f86808
+	&__link
+		&:active,
+		&:hover,
+		&:visited,
+		&:link
+			color: #ffffff
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 100%
+			width: 100%
+
+	// &_main
+	// 	position: fixed
+	// 	top: 40%
+	// 	left: 0
+	// 	.social-btn__list
+	// 		border: 2px solid #ffffff
+	// 		border-left: 0
+	// 		border-radius: 0 8px 8px 0
+	// 		overflow: hidden
+	// 		box-shadow: 0 0 20px $color-1
+
+	&_main-2
+		position: fixed
+		top: 40%
+		left: 0
+		border: 2px solid $color-1
+		border-left: 0
+		overflow: hidden
+		border-radius: 0 8px 8px 0
+		.social-btn
+			&__list
+				border: 2px solid #ffffff
+				border-left: 0
+				overflow: hidden
+				border-radius: 0 8px 8px 0
+				flex-direction: column
+
+	&_sidebar
+		.social-btn
+			&__list
+				width: 100%
+				justify-content: center
+				margin: 10px 0
+			&__item
+				margin: 2px

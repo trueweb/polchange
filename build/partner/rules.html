@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="keywords" content="meta_k .........text"/>
+    <meta name="description" content="meta_d ......text"/>
+    <title>Doc title</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__col header__col_1"><a class="logo" href="/"><img class="logo__img" src="/img/logo.png" alt="" role="presentation"/></a>
+              <!--
+              +e.row
+              	+e.SPAN.col_1
+              		+e.IMG.img(src="/img/logo-graphik.png")
+              	+e.SPAN.col_2 POL
+              	+e.SPAN.col_3 CHANGE
+              
+              -->
+              <div class="btn btn_nav-main-toggle fa fa-bars" id="btn_nav-main-toggle">
+              </div>
+            </div>
+            <div class="header__col header__col_2"><a class="banner banner_header" href="/contests"><img class="banner__img" src="/img/banner/header-banner-1.gif" alt="" role="presentation"/></a><a class="banner banner_header" href="/contests"><img class="banner__img" src="/img/banner/header-banner-2.gif" alt="" role="presentation"/></a>
+            </div>
+            <div class="header__col header__col_3">
+              <!--+e.auth
+              +e.SPAN.text_auth Вы вошли как: 
+              +e.SPAN.text_user Андрей 
+              +b.A.btn_exit(href="auth.php?action=exit") Выйти
+              
+              -->
+              <button class="btn btn_login" id="btn_login">
+              </button>
+              <button class="btn btn_reg" id="btn_reg">
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="content">
+          <div class="content__col content__col_1">
+            <aside class="sidebar sidebar_left">
+              <div class="sidebar__row sidebar__row_1"><i class="sidebar__close fa fa-close"></i>
+              </div>
+              <!-- навигация партнёрам-->
+              <div class="sidebar__row sidebar__row_2">
+                <nav class="nav nav_sidebar-left" id="nav_sidebar-left">
+                  <ul class="nav__list" id="nav-list_main">
+                    <li class="nav__item active"><a class="nav__link" href="/partner/account.html">Партнерский аккаунт</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/stats.html">Привлеченные посетители</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/referals.html">Привлеченные рефералы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/withdraw.html">Вывод партнерских средств</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/generate.html">Код партнерской ссылки</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/promo.html">Баннеры</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/text.html">Текстовые материалы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/scripts.html">Скрипты и формы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/attract.html">Как привлекать посетителей</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/faq.html">Партнерский FAQ</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="/partner/rules.html">Условия партнерской программы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Профиль</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="auth.php?action=exit">Выход</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </aside>
+          </div>
+          <div class="content__col content__col_2">
+            <main class="main" role="main">
+              <!-- nav-->
+              <nav class="nav nav_main" id="nav_main">
+                <div class="nav__btn-burger nav__btn-burger_main" data-id="nav__main">
+                  <div class="nav__btn-burger-item">
+                  </div>
+                </div>
+                <ul class="nav__list" id="nav-list_main">
+                  <li class="nav__item active"><a class="nav__link" href="/index.html">Мониторинг</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/exchangers.html">Обменники</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/partner.html">Партнерам</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/bonuse.html">Бонусы</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/news.html">Новости</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="/admin.html">Админка</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="text-box text-box_gradient">
+                <h1 class="text-box__title">Условия участия в партнерской программе
+                </h1>
+                <div class="text-box__text">Регистрируясь на сайте мониторинга обменников BestChange.ru в качестве партнера, вы подтверждаете свое полное согласие с настоящими правилами и обязуетесь их соблюдать.
+                </div>
+                <ul class="list-box list-box_rules-partner">
+                  <li class="list-box__item list-box__item_no-num">1. Начисления и выплаты по партнерской программе ведутся в валюте USD. Вывод партнерских средств доступен на выбор в электронных валютах Perfect Money (USD, EUR), Bitcoin, PayPal (USD), Яндекс.Деньги, QIWI (USD, EUR, RUB), Payeer (USD, EUR, RUB), Anvanced Cash (USD, EUR, RUB).
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">2. Минимальная сумма для снятия заработанных денег с партнерского счета составляет <b>$1,00</b>.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">3. За каждого привлеченного вами <b>уникального</b> пользователя вы можете получить до <b>$0,50+</b>.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">3.1. Оплата за одного пользователя складывается из нескольких отдельных начислений:
+                    <ul class="list-box__list">
+                      <li class="list-box__item">Первое посещение привлеченного пользователя – <span class="list-box__text list-box__text_green">$0,04</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">Если привлеченный вами пользователь:
+                    <ul class="list-box__list">
+                      <li class="list-box__item">воспользовался мониторингом обменников, вы получаете  <span class="list-box__text list-box__text_green">$0,01 </span>
+                        <SPAN>x 9;</SPAN>
+                      </li>
+                      <li class="list-box__item">возвратился на сайт через 3 дня, вы получаете <span class="list-box__text list-box__text_green">$0,02</span>
+                      </li>
+                      <li class="list-box__item">возвратился на сайт через 7 дней, вы получаете <span class="list-box__text list-box__text_green">$0,03</span>
+                      </li>
+                      <li class="list-box__item">возвратился на сайт через 14 дней, вы получаете <span class="list-box__text list-box__text_green">$0,04</span>
+                      </li>
+                      <li class="list-box__item">возвратился на сайт через 30 дней, вы получаете <span class="list-box__text list-box__text_green">$0,06</span>
+                      </li>
+                      <li class="list-box__item">возвратился на сайт через 60 дней, вы получаете <span class="list-box__text list-box__text_green">$0,09</span>
+                      </li>
+                      <li class="list-box__item">возвратился на сайт через 90 дней, вы получаете <span class="list-box__text list-box__text_green">$0,13</span>
+                      </li>
+                      <li class="list-box__item">зарегистрировался как партнер, вы получаете  <span class="list-box__text list-box__text_green">30% от </span>
+                        <SPAN>его дохода в нашей системе;</SPAN>
+                      </li>
+                      <li class="list-box__item">зарегистрировался как партнер и привлек еще одного партнера, вы получаете  <span class="list-box__text list-box__text_green">10% от </span>
+                        <SPAN>дохода последнего в нашей системе.</SPAN>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">3.2. Указанные значения партнерских вознаграждений могут быть со временем изменены. При этом все заработанные средства сохраняются на счете с учетом действовавших ранее ставок.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">4. Пользователь не считается уникальным (не учитывается системой), если:
+                    <ul class="list-box__list">
+                      <li class="list-box__item">с его IP-адреса уже совершался переход на наш сайт по такой же партнерской ссылке в течение последних 3-х месяцев;
+                      </li>
+                      <li class="list-box__item">его браузер не передает параметр адреса страницы, с которой был совершен переход;
+                      </li>
+                      <li class="list-box__item">он не заинтересован в использовании сервиса;
+                      </li>
+                      <li class="list-box__item">он перешел на наш сайт только ради получения "бесплатного бонуса";
+                      </li>
+                      <li class="list-box__item">переход совершил сам партнер.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">5. Партнерам <b>запрещается</b> переходить по своим собственным партнерским ссылкам, либо просить других пользователей переходить по партнерским ссылкам, либо использовать любые другие виды накруток переходов.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">6.  На странице, где вы публикуете о нас информацию должно быть четко указано об услугах, предоставляемых нашим сервисом. Любой <b>обман</b> в описании, призывающий пользователя перейти по партнерской ссылке, приведет к <u>блокировке</u> партнерского аккаунта. В рекламных текстах <b>запрещаются</b> любые упоминания о наличии "бесплатных бонусов" на нашем сайте.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">7. <b>Запрещается</b> размещать партнерскую ссылку:
+                    <ul class="list-box__list">
+                      <li class="list-box__item"><u>в системах активной рекламы (САР)</u>, платного просмотра рекламных писем, оплачиваемых заданий и подобных систем (<span class="list-box__text list-box__text_red">Seosprint, Socpublic, Wmmail, Vipip, Seo-fast, Wmpublic, Profitcentr, Greenstree, Fastprom, Webisida, Wmrfast, Wmrok, Vktarget, Vipip, Wm-seo </span>
+                        <SPAN>и многие другие);</SPAN>
+                      </li>
+                      <li class="list-box__item">на сайтах, пользующихся услугами сервисов из предыдущего пункта;
+                      </li>
+                      <li class="list-box__item">в системах контекстной рекламы, тизерных сетях, купли/продажи трафика (AdWords, Директ, Tak и т.п.);
+                      </li>
+                      <li class="list-box__item">в массовых рассылках писем (СПАМ), электронных сообщений в различных сервисах, социальных сетях;
+                      </li>
+                      <li class="list-box__item">на сайтах, принудительно открывающих окна браузера (в т.ч. дорвеи), либо открывающих сайт в скрытом фрейме;
+                      </li>
+                      <li class="list-box__item">на сайтах, созданных только ради рекламы реферальных ссылок;
+                      </li>
+                      <li class="list-box__item">на сайтах, распространяющих любые материалы, прямо или косвенно нарушающие законодательство РФ;
+                      </li>
+                      <li class="list-box__item">на веб-страницах, публикующих списки сайтов с "бесплатными бонусами" и "BTC-кранами" (вы можете добавить наш сайт в подобный список, но ссылка при этом не должна быть партнерской);
+                      </li>
+                      <li class="list-box__item">на веб-страницах, закрытых от публичного просмотра. Например, закрытые группы и страницы в социальных сетях, закрытые разделы форумов и т.п.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">Сайты, нарушающие вышеперечисленные правила, будут занесены в черный список нашей партнерской программы. Оплата за пользователей, пришедших с подобных сайтов производиться не будет.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">8. При несоблюдении условий партнерской программы аккаунт нарушителя будет заблокирован без выплат и объяснения причин.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">9. При <u>подозрении в накрутке</u> партнерской программы (создании фиктивного потока переходов) администратор оставляет за собой право:
+                    <ul class="list-box__list">
+                      <li class="list-box__item">запрашивать у партнера <u>скриншоты</u> размещенных рекламных материалов;
+                      </li>
+                      <li class="list-box__item">запрашивать доступ к <u>статистике посещений</u> сайтов, на которых были размещены рекламные материалы;
+                      </li>
+                      <li class="list-box__item"><u>блокировать аккаунт</u> партнера, подозреваемого в накрутке, <u>без выплат и объяснения причин</u>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">10. Партнер несет полную ответственность за сохранность своих аутентификационных данных (логина и пароля) для доступа к аккаунту.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">11. При регистрации в партнерской программе партнер автоматически подписывается на рассылку "Новости партнерской программы". При необходимости партнер может отказаться от этой подписки в разделе "Профиль" в своем партнерском аккаунте.
+                  </li>
+                  <li class="list-box__item list-box__item_no-num">12. Данные условия могут изменяться в одностороннем порядке без оповещения участников программы, но с публикацией на этой странице.
+                  </li>
+                </ul>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div class="btn btn_show-currency-selection" id="btn_show-currency-selection">Доступные напраления обмена
+      </div>
+      <div class="social-btn social-btn_main-2">
+        <div class="social-btn__list">
+          <div class="social-btn__item social-btn__item_tw"><a class="social-btn__link fa fa-twitter" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_gg"><a class="social-btn__link fa fa-google" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_fb"><a class="social-btn__link fa fa-facebook" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_yb"><a class="social-btn__link fa fa-youtube" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_instagram"><a class="social-btn__link fa fa-instagram" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_vk"><a class="social-btn__link fa fa-vk" href="#"></a>
+          </div>
+          <div class="social-btn__item social-btn__item_rss"><a class="social-btn__link fa fa-rss" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_history" id="modal_history">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <div class="text-box">
+              <h3 class="text-box__title">История переходов на обменные пункты
+              </h3>
+              <p class="text-box__text">Здесь приведен список произведенных вами ранее переходов на обменные пункты. Показан курс обмена и резерв валюты на момент совершения перехода с мониторинга на обменный пункт.
+              </p>
+            </div>
+            <div class="modal__box-scroll">
+              <table class="table table_modal-history table_striped">
+                <thead class="table__title">
+                  <thead class="table__head">
+                    <tr class="table__row">
+                      <th class="table__col table__col_title">Дата
+                      </th>
+                      <th class="table__col table__col_title">Обменник
+                      </th>
+                      <th class="table__col table__col_title">Направление и курс обмена
+                      </th>
+                      <th class="table__col table__col_title">Резерв
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="table__body">
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"> <a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span>RUB QIWI </span><b>1</b><span>LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__col table__col_date">20.05, 21:00
+                      </td>
+                      <td class="table__col table__col_exchanger"><a class="table__link" href="#">24 обменник</a>
+                      </td>
+                      <td class="table__col table__col_rate"><a class="table__link" href=""><b>8'773</b><span class="currency">RUB QIWI </span><b>1</b><span class="currency">LTC</span></a>
+                      </td>
+                      <td class="table__col table__col_reserve">8888
+                      </td>
+                    </tr>
+                  </tbody>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_setings" id="modal_settings">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <div class="text-box">
+              <h3 class="text-box__title">Персональные настройки
+              </h3>
+              <p class="text-box__text">Здесь вы можете произвести некоторые настройки сайта BestChange.ru. Данные параметры будут храниться в cookies вашего браузера. При посещении сайта с другого компьютера или браузера вам будет необходимо сохранить эти настройки заново.
+              </p>
+            </div>
+            <form class="form form_modal-settings" action="script.php?action=settings" id="form_modal-settings">
+              <div class="form__item">
+                <div class="form__name">Обновление:
+                </div>
+                <select class="form__select" name="time_up">
+                  <option class="form__option" value="15" selected="selected">через 15 секунд
+                  </option>
+                  <option class="form__option" value="30">через 30 секунд
+                  </option>
+                  <option class="form__option" value="45">через 45 секунд
+                  </option>
+                  <option class="form__option" value="60">через минуту
+                  </option>
+                  <option class="form__option" value="120">через 2 минуты
+                  </option>
+                  <option class="form__option" value="180">через 3 минуты
+                  </option>
+                  <option class="form__option" value="300">через 5 минут
+                  </option>
+                  <option class="form__option" value="0">не обновлять
+                  </option>
+                </select>
+                <p class="form__text">Периодичность автообновления курсов в таблице
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Дробных знаков:
+                </div>
+                <select class="form__select" name="count_char">
+                  <option class="form__option" value="0" selected="selected">нет
+                  </option>
+                  <option class="form__option" value="2">2
+                  </option>
+                  <option class="form__option" value="4">4
+                  </option>
+                  <option class="form__option" value="6">6
+                  </option>
+                  <option class="form__option" value="8">8
+                  </option>
+                </select>
+                <p class="form__text">Число знаков в дробной части числа
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Разд-ль целой части:
+                </div>
+                <select class="form__select" name="separator">
+                  <option class="form__option" value="1" selected="selected">точка .
+                  </option>
+                  <option class="form__option" value="2"> запятая ,
+                  </option>
+                </select>
+                <p class="form__text">Символ между целой и дробной частью числа
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Разд-ль разрядов:
+                </div>
+                <select class="form__select" name="separator_row">
+                  <option class="form__option" value="1" selected="selected">,(запятая)
+                  </option>
+                  <option class="form__option" value="2">пробел
+                  </option>
+                  <option class="form__option" value="3">`(апостроф)
+                  </option>
+                </select>
+                <p class="form__text">Символ, разделяющий группы цифр в целой части
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Шрифт сайта:
+                </div>
+                <select class="form__select" name="font_family">
+                  <option class="form__option" value="1" selected="selected">Arial
+                  </option>
+                  <option class="form__option" value="2">Tahoma
+                  </option>
+                  <option class="form__option" value="3">Verdana
+                  </option>
+                </select>
+                <p class="form__text">Используемый шрифт для всего сайта
+                </p>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Выделение курсов:
+                </div>
+                <select class="form__select" name="font_style">
+                  <option class="form__option" value="1" selected="selected">полужирным
+                  </option>
+                  <option class="form__option" value="2">не выделять
+                  </option>
+                </select>
+                <p class="form__text">Выделение числовых значений курсов в таблице
+                </p>
+              </div>
+              <p class="notice notice_success">Настройки сохранены
+              </p>
+              <p class="notice notice_error">Настройки не сохранены
+              </p><input class="form__btn-send" type="submit" value="Cохранить настройки"/>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_login" id="modal_login">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <form class="form form_login" action="auth.php?action=login" method="POST">
+              <div class="form__item"><input class="form__field form__field_login" name="login" placeholder="Логин" type="text"/>
+                <label class="form__label form__label_error active">Неправильный логин или пароль
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass" placeholder="Пароль"/>
+              </div>
+              <div class="form__item"><a class="form__link" href="/reminder.html">Напомнить пароль</a>
+              </div>
+              <div class="form__item"><input class="form__btn-send" type="submit" value="Войти"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_reg" id="modal_reg">
+        <div class="modal__box">
+          <div class="modal__close fa fa-times">
+          </div>
+          <div class="modal__content">
+            <form class="form form_reg" action="auth.php?action=reg" method="POST">
+              <div class="form__item"><input class="form__field form__field_login" name="login" placeholder="Логин" type="text"/>
+                <label class="form__label form__label_error">Такой логин уже существует
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_mail" type="email" name="mail" placeholder="E-mail"/>
+                <label class="form__label form__label_error">Такой E-mail уже существует
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass_1" placeholder="Пароль"/>
+                <label class="form__label form__label_error">Пароли не совпадают
+                </label>
+              </div>
+              <div class="form__item"><input class="form__field form__field_pass" type="password" name="pass_2" placeholder="Повторите пароль"/>
+                <label class="form__label form__label_error">Пароли не совпадают
+                </label>
+              </div>
+              <div class="form__item"><input class="form__btn-send" type="submit" value="Регистрация"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__item"><a class="footer__link" href="#">Правила для обменников</a>
+            </div>
+            <div class="footer__item"><span class="footer__text">Связь: </span><a class="footer__link" href="mailto:support@polchange.ru">support@polchange.ru</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="/vendor/sprite/sprite.css"/>
+      <link rel="stylesheet" href="/css/style.css"/>
+      <script src="/vendor/jquery.min.js"></script>
+      <script src="/js/app.js"></script>
+    </div>
+  </body>
+</html>

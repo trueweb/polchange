@@ -1,0 +1,113 @@
+extends ../../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-2()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						+b.text-box
+							+e.title Партнерский аккаунт
+							+b.TABLE.table(class="_striped _page-account")
+								+e.TBODY.body
+									+e.TR.row
+										+e.TD.col_name Идентификационный номер
+										+e.TD.col_value 9784
+									+e.TR.row
+										+e.TD.col_name Партнерская ссылка
+										+e.TD.col_value https://www.bestchange.ru/?p=9784
+									+e.TR.row
+										+e.TD.col_name Дата регистрации
+										+e.TD.col_value 13 августа 2013
+									+e.TR.row
+										+e.TD.col_name E-mail
+										+e.TD.col_value demo@demo.com
+									+e.TR.row
+										+e.TD.col_name Кошельки для выплат
+										+e.TD.col_value U1234567, E1234567, P1234567, 4100101234567, +79123456789, 3EiCGnmNWDEVnu1vUMn2peko8bX2As2qQx <a href="#"> изменить </a>
+
+							+e.title Статистика
+
+							+b.TABLE.table(class="_striped _page-account")
+								+e.TBODY.body
+									+e.TR.row
+										+e.TD.col_name Перешло посетителей
+										+e.TD.col_value 1327
+									+e.TR.row
+										+e.TD.col_name Оплаченных переходов
+										+e.TD.col_value 1429
+									+e.TR.row
+										+e.TD.col_name Заработано на посетителях
+										+e.TD.col_value $45,45
+									+e.TR.row
+										+e.TD.col_name Рефералов 2-го уровня
+										+e.TD.col_value 13
+									+e.TR.row
+										+e.TD.col_name Заработано на рефералах 2 уровня
+										+e.TD.col_value $21,27
+									+e.TR.row
+										+e.TD.col_name Рефералов 3-го уровня
+										+e.TD.col_value 337
+									+e.TR.row
+										+e.TD.col_name Заработано на рефералах 3 уровня
+										+e.TD.col_value $146,91
+
+							+e.title Неучтенные переходы
+
+							+b.TABLE.table(class="_striped _page-account")
+								+e.TBODY.body
+									+e.TR.row
+										+e.TD.col_name Прямые переходы
+										+e.TD.col_value 2'772
+									+e.TR.row
+										+e.TD.col_name С сайтов из черного списка
+										+e.TD.col_value 2'357
+
+							+e.title Баланс аккаунта
+
+							+b.TABLE.table(class="_striped _page-account")
+								+e.TBODY.body
+									+e.TR.row
+										+e.TD.col_name Заработано всего
+										+e.TD.col_value $213,63
+									+e.TR.row
+										+e.TD.col_name Выплачено
+										+e.TD.col_value $213,17
+									+e.TR.row
+										+e.TD.col_name Заказано на выплату
+										+e.TD.col_value $0,00
+									+e.TR.row
+										+e.TD.col_name Доступно для <a href="#"> заказа </a> выплаты
+										+e.TD.col_value $0,46
+
+							+e.text Примечание: статистика обновляется каждые 5 минут.
+
+							+e.title Промо-материалы
+
+							+e.text Рекламный текст с ссылкой, который Вы разместите на Вашем сайте, в блогах, форумах, сервисах вопросов и ответов, социальных сетях, сервисах закладок будет вести пользователей на BestChange.ru, а Вы будете получать гарантированное вознаграждение за переходы пользователей.
+
+							+e.text Ниже представлены основные варианты рекламных материалов с Вашей партнерской ссылкой. Вы можете использовать любые тексты ссылки или воспользоваться нашими. Нужно просто скопировать выбранный код к себе на сайт и начать зарабатывать деньги.
+
+							+e.text Также Вы можете воспользоваться <a href="#"> генератором </a> партнерских ссылок.
+
+							+e.text Партнерская ссылка:
+							+e.TEXTAREA.textarea https://polchange.ru
+
+							+e.text Партнерская ссылка в HTML-коде (для размещения на сайтах и блогах):
+							+e.TEXTAREA.textarea <a target="_blank" href="https://polchange.ru">обменники валют</a>
+
+							+e.text Скрытая партнерская ссылка в HTML-коде (не видно, что ссылка партнерская):
+							+e.TEXTAREA.textarea <a target="_blank" href="https://polchange.ru/" onclick="this.href='https://polchange.ru'">обменники валют</a>
+
+							+e.text Партнерская ссылка в BBCode (для размещения на форумах):
+							+e.TEXTAREA.textarea [url="http://polchange.ru"]обменники валют[/url]

@@ -1,0 +1,52 @@
+.text-box
+	margin-bottom: 15px
+	padding: 10px 5px 20px 10px
+	&_gradient
+		background: linear-gradient(to bottom, $color-3, #fff)
+		box-shadow: 0 20px 25px rgba($color-5, .1)
+		border-radius: 10px
+	&__title
+		font-size: 20px
+		margin: 10px 0
+	&__text
+		margin: 10px 0
+	a
+		border-bottom: 1px dashed $color-9
+	&__textarea
+		width: 100%
+		height: 60px
+		border-radius: 10px
+		padding: 10px
+		box-sizing: border-box
+		color: $color-10
+
+	&_banner-scripts
+		.text-box
+			&__item
+				display: flex
+				flex-direction: column
+				align-items: center
+				margin-bottom: 10px
+			&__textarea
+				width: 80%
+
+	&_text-promo
+		margin-bottom: 30px
+		padding: 0
+		.text-box
+			&__box
+				background-color: rgba($color-9, .1)
+				border-radius: 8px
+				padding: 10px
+				margin-bottom: 10px
+				font-style: italic
+			&__textarea
+				overflow-x: hidden
+				width: 80%
+				height: 80px
+				border-radius: 3px
+				color: $color-10
+				line-height: 1.5
+				margin: 0 auto
+				display: block
+				padding: 10px

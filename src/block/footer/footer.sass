@@ -1,0 +1,19 @@
+.footer
+	&__row
+		width: 100%
+		background: linear-gradient(to bottom, $color-5, $color-6)
+		padding: 15px 0
+		color: #ffffff
+		text-align: center
+	&__link
+		&:active,
+		&:hover,
+		&:visited,
+		&:link
+			color: #ffffff
+			text-decoration: underline
+
+@if $adaptive
+	@media #{$phone}
+		.footer
+			background: linear-gradient(to bottom, $color-5, $color-6)

@@ -1,0 +1,53 @@
+mixin b-form_login
+	+b.FORM(action="auth.php?action=login" method="POST").form_login
+		+e.item
+			+e.INPUT(name="login" placeholder="Логин").field_login
+			+e.LABEL.label_error.active Неправильный логин или пароль
+		+e.item
+			+e.INPUT(type="password" name="pass" placeholder="Пароль").field_pass
+		+e.item
+			+e.A.link(href="/reminder.html") Напомнить пароль
+		+e.item
+			+e.INPUT(type="submit" value="Войти").btn-send
+
+mixin b-form_reg
+	+b.FORM(action="auth.php?action=reg" method="POST").form_reg
+		+e.item
+			+e.INPUT(name="login" placeholder="Логин").field_login
+			+e.LABEL.label_error Такой логин уже существует
+		+e.item
+			+e.INPUT(type="email" name="mail" placeholder="E-mail").field_mail 
+			+e.LABEL.label_error Такой E-mail уже существует
+		+e.item
+			+e.INPUT(type="password" name="pass_1" placeholder="Пароль").field_pass
+			+e.LABEL.label_error Пароли не совпадают
+		+e.item
+			+e.INPUT(type="password" name="pass_2" placeholder="Повторите пароль").field_pass
+			+e.LABEL.label_error Пароли не совпадают
+		+e.item
+			+e.INPUT(type="submit" value="Регистрация").btn-send
+
+
+mixin b-form_searsch-date
+	+b.FORM(action="exchanger.php?action=reg" method="POST").form_searsch-date
+		+e.item
+			+e.title Фильтровать по дате:
+			+e.INPUT(name="date_1" placeholder="Дата от" type="date").field_date-1
+			+e.INPUT(name="date_2" placeholder="Дата до" type="date").field_date-2
+			+e.INPUT(type="submit" value="Искать").btn-send
+
+
+
+mixin b-form_purse
+	+b.FORM(action="purse.php?action=purse" method="POST").form_purse
+		+e.item
+			+e.text Вы можете получить от <b>0.01</b> до <b>0.35</b> руб на свой кошелек Яндекс.Деньги. Подарочный бонус выплачивается не более раза в сутки. За сегодня было выплачено 1630 бонусов.
+		+e.item
+			+e.INPUT(name="purse" placeholder="41001... (ЯД-кошелек не ниже именного)").field_purse
+		+e.item
+			+e.text *Введите номер справа
+		+e.item
+			+e.INPUT(name="captcha" placeholder="").field_captcha
+			+e.text-captcha
+		+e.item
+			+e.INPUT(type="submit" value="Получить бонус" disabled="disabled").btn-send

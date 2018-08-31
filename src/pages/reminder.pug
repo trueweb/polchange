@@ -1,0 +1,28 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.text-box_gradient
+							+e.H1.title Восстановление пароля
+							+e.P.text Для восстановления доступа к аккаунту партнера, вам необходимо ввести логин или e-mail, которые были указаны при регистрации. Данные для авторизации поступят на e-mail.
+							
+							+b.FORM(action="auth.php?action=reminder" method="POST").form_reminder#form_reminder
+								+e.item
+									+e.INPUT(name="login" placeholder="Логин или e-mail" required="required").field_login
+									+e.INPUT(type="submit" value="Востановить").btn-send

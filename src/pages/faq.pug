@@ -1,0 +1,43 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.text-box_gradient
+							+e.H1.title Ответы на часто задаваемые вопросы
+							+b.toggler-more-info
+								+e.item
+									+e.row_1
+										+e.btn-toggle Для чего нужен ваш сайт?
+										+e.I.icon_toggle.fa.fa-angle-down
+									+e.row_2
+										+e.box-toggle BestChange.ru – это бесплатный Интернет-сервис, помогающий находить обменные пункты с наиболее выгодными обменными курсами. Подробнее читайте в разделах О сайте и Инструкция.
+
+								+e.item
+									+e.row_1
+										+e.btn-toggle Для чего нужен ваш сайт?
+										+e.I.icon_toggle.fa.fa-angle-down
+									+e.row_2
+										+e.box-toggle BestChange.ru – это бесплатный Интернет-сервис, помогающий находить обменные пункты с наиболее выгодными обменными курсами. Подробнее читайте в разделах О сайте и Инструкция.
+
+								+e.item
+									+e.row_1
+										+e.btn-toggle Для чего нужен ваш сайт?
+										+e.I.icon_toggle.fa.fa-angle-down
+									+e.row_2
+										+e.box-toggle BestChange.ru – это бесплатный Интернет-сервис, помогающий находить обменные пункты с наиболее выгодными обменными курсами. Подробнее читайте в разделах О сайте и Инструкция.

@@ -1,0 +1,38 @@
+.tab
+	display: flex
+	margin-bottom: 20px
+	flex-wrap: wrap
+	&__nav
+		display: flex
+	&__item
+		cursor: pointer
+		background-color: $color-6
+		border-radius: 5px
+		padding: 5px 10px
+		color: #fff
+		position: relative
+		box-sizing: border-box
+		margin-right: 10px
+		&::before
+			position: absolute
+			bottom: -20px
+			left: 50%
+			margin-left: -10px
+			content: ""
+			display: inline-block
+			border: 10px solid transparent
+			border-top: 10px solid $color-6
+	
+	&_admin
+		.tab
+			&__item
+				&::before
+					display: none
+				&.active
+					color: $color-7
+			&__content
+				display: none
+				width: 100%
+				margin-top: 10px
+				&.active
+					display: block

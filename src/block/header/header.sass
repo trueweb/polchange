@@ -1,0 +1,32 @@
+.header
+	width: 100%
+	padding: 10px 0
+	margin-bottom: 10px
+	border-bottom: 2px solid $color-1
+	background: linear-gradient(to top, rgba($color-1, .8), rgba($color-1, .4))
+	&__row
+		display: flex
+		justify-content: space-between
+	&__col
+		&_1
+			display: flex
+			align-items: center
+		&_2
+			display: flex
+			lign-items: center
+	&__auth
+		font-size: 16px
+		color: $color-5
+		
+@if $adaptive
+	@media #{$phone}
+		.header
+			&__row
+				flex-direction: column
+				align-items: center
+			&__col
+				margin-bottom: 15px
+				&_1
+					display: flex
+					justify-content: space-between
+					width: 100%

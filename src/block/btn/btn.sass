@@ -1,0 +1,84 @@
+.btn
+	&_login,
+	&_reg
+		height: 52px
+		width: 131px
+		background-color: transparent
+		margin: 0 1px
+		background-repeat: no-repeat
+	&_login
+		background-image: url(../img/btn_login.png)
+	&_reg
+		background-image: url(../img/btn_reg.png)
+
+.btn
+	&_exit
+		padding: 3px 8px
+		color: #fff
+		background-color: $color-1
+		border-radius: 5px
+		border: 1px solid $color-2
+
+.btn
+	&_info
+		display: inline-block
+		color: $color-10
+		cursor: pointer
+		margin: 5px
+		.btn
+			&__icon
+				padding-right: 5px
+				color: $color-6
+			&__text
+				border-bottom: 1px dashed $color-10
+
+.btn
+	&_more-currency-selection
+		cursor: pointer
+		width: 100%
+		background-color: $color-3
+		border: 1px solid $color-6
+		padding: 2px
+		font-size: 18px
+		border-radius: 8px
+		margin-bottom: 20px
+		&.active
+			background-color: $color-5
+			color: #fff
+
+.btn
+	&_show-currency-selection
+		display: none
+
+@if $adaptive
+	@media #{$pc}
+		.btn
+			&_show-currency-selection
+				display: flex
+				justify-content: flex-start
+				cursor: pointer
+				padding: 5px
+				transform: rotate(270deg)
+				color: #ffffff
+				background-color: $color-1
+				border-radius: 5px
+				position: fixed
+				top: 180px
+				left: -110px
+				font-size: 16px
+				z-index: 2
+		
+.btn
+	&_nav-main-toggle
+		display: none
+
+@if $adaptive
+	@media #{$phone}
+		.btn
+			&_nav-main-toggle
+				display: inline-block
+				font-size: 35px
+				color: #fff
+				cursor: pointer
+				z-index: 1000
+				margin-top: -15px

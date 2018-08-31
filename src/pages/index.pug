@@ -1,0 +1,140 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.text-box_gradient
+							+e.H1.title Мониторинг обменных пунктов BestChange.ru
+							+e.P.text Наш мониторинг обменников создан для тех, кто обменивает электронные деньги в Интернете, и для тех, кому важно производить безопасные обмены с наименьшими комиссионными затратами. Чтобы подробнее ознакомиться с нашим сервисом посмотрите обзорное.
+
+							+e.H1.title Наиболее выгодные курсы обмена
+							+e.P.text Наш мониторинг обменников создан для тех, кто обменивает электронные деньги в Интернете, и для тех, кому важно производить безопасные обмены с наименьшими комиссионными затратами. Чтобы подробнее ознакомиться с нашим сервисом посмотрите обзорное. 
+								A(href="#") Ссылка
+
+						// main__box_btn-info
+						+e.box_btn-info
+							+b.btn_info#btn_info_history
+								+e.I.icon.fa.fa-clock-o
+								+e.SPAN.text История
+
+							+b.btn_info#btn_info_settings
+								+e.I.icon.fa.fa-cog
+								+e.SPAN.text Настройка
+
+
+						// main__box_btn-info
+						+e.box_exchange-rates
+							+b.tab_exchange-rates
+								+e.item Курсы обмена
+
+							// table_exchange-rates
+							+b.TABLE.table_exchange-rates
+								+e.THEAD.title
+									+e.THEAD.head
+										+e.TR.row
+											+e.TH.col_title 
+												+b.I.fa.fa-info-circle
+											+e.TH.col_title Обменник
+											+e.TH.col_title Отдаете
+											+e.TH.col_title Получаете
+											+e.TH.col_title Резерв
+											+e.TH.col_title Отзывы
+									+e.TBODY.body
+										+e.TR.row
+											+e.TD.col_info
+												+b.I.fa.fa-info-circle
+												+b-info-change_table()
+
+											+e.TD.col_exchange
+												+e.A.link(href="#") NetEx24
+
+											+e.TD.col_give
+												+e.A.link(href="#") 
+													+e.SPAN.sum 522 555.666
+													+e.SPAN.currency RUR QIWI
+													+e.SPAN.currency-min от 10 000
+
+											+e.TD.col_get
+													+e.A.link(href="#") 
+														+e.SPAN.sum 522 555.666
+														+e.SPAN.currency RUR QIWI
+														+e.SPAN.currency-min от 10 000
+														
+
+											+e.TD.col_reserve
+													+e.A.link(href="#") 5555
+
+											+e.TD.col_reviews
+													+e.A.link(href="/commentary.html")
+														+e.SPAN.reviews_dislike 0 
+														SPAN / 
+														+e.SPAN.reviews_like 4455
+
+										+e.TR.row
+											+e.TD.col_info
+												+b.I.fa.fa-info-circle
+												+b-info-change_table()
+
+											+e.TD.col_exchange
+												+e.A.link(href="#") NetEx24
+
+											+e.TD.col_give
+												+e.A.link(href="#") 
+													+e.SPAN.sum 522 555.666
+													+e.SPAN.currency RUR QIWI
+
+											+e.TD.col_get
+													+e.A.link(href="#") 
+														+e.SPAN.sum 522 555.666
+														+e.SPAN.currency RUR QIWI
+
+											+e.TD.col_reserve
+													+e.A.link(href="#") 5555
+
+											+e.TD.col_reviews
+													+e.A.link(href="/commentary.html")
+														+e.SPAN.reviews_dislike 0 
+														SPAN / 
+														+e.SPAN.reviews_like 4455
+
+										+e.TR.row
+											+e.TD.col_info
+												+b.I.fa.fa-info-circle
+												+b-info-change_table()
+
+											+e.TD.col_exchange
+												+e.A.link(href="#") NetEx24
+
+											+e.TD.col_give
+												+e.A.link(href="#") 
+													+e.SPAN.sum 522 555.666
+													+e.SPAN.currency RUR QIWI
+
+											+e.TD.col_get
+													+e.A.link(href="#") 
+														+e.SPAN.sum 522 555.666
+														+e.SPAN.currency RUR QIWI
+
+											+e.TD.col_reserve
+													+e.A.link(href="#") 5555
+
+											+e.TD.col_reviews
+													+e.A.link(href="/commentary.html")
+														+e.SPAN.reviews_dislike 0 
+														SPAN / 
+														+e.SPAN.reviews_like 4455

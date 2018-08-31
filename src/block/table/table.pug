@@ -1,0 +1,68 @@
+mixin b-table_currency-selection()
+	+b.TABLE.table_currency-selection#table_currency-selection
+		+e.THEAD.title
+			+e.THEAD.head
+				+e.TR.row
+					+e.TH.col_title Отдаете
+					+e.TH.col_title Получаете
+			+e.TBODY.body
+				// 
+					в атрибутах data-currency - узазыватся названия валют
+					в атрибутах data-category - узазыватся названия категорий
+					когда человек выбирает 2 клетки где совпадают значения атрибутов data-category происходит редирект согласно значений data-currency
+				+e.TR.row
+					+e.TD.col_give(data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~")
+						+b.I.icon.icon-WMZ
+						+e.SPAN.text WMZ
+					+e.TD.col_get(data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~")
+						+b.I.icon.icon-WMZ
+						+e.SPAN.text WMZ
+				+e.TR.row.hide
+					+e.TD.col_give(data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMR
+					+e.TD.col_get(data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMR
+				+e.TR.row
+					+e.TD.col_give(data-category="currency" data-currency="WMU" data-direction="~WMR~~WMU~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMU
+					+e.TD.col_get(data-category="currency" data-currency="WMU" data-direction="~WMR~~WMU~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMU
+				+e.TR.row
+					+e.TD.col_give(data-category="currency" data-currency="Liqpay" data-direction="~WMR~~WMZ~")
+						+b.I.icon.icon-liqpay
+						+e.SPAN.text Liqpay
+					+e.TD.col_get(data-category="currency" data-currency="Liqpay" data-direction="~WMR~~WMZ~")
+						+b.I.icon.icon-liqpay
+						+e.SPAN.text Liqpay
+				+e.TR.row
+					+e.TD.col_give(data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMZ
+					+e.TD.col_get(data-category="currency" data-currency="WMZ" data-direction="~WMZ~~WMR~~WMU~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMZ
+				+e.TR.row
+					+e.TD.col_give(data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMR
+					+e.TD.col_get(data-category="currency" data-currency="WMR" data-direction="~WMR~~WMZ~")
+						+b.I.icon.icon-webmoney-blue
+						+e.SPAN.text WMR
+
+				// 
+					Рядам таблиц которые должны быть скрыты по умолчанию добавляется класс "hide"
+					Заголовкам категорий добавляется атрибут colspan="2" и класс "table__col_title" 
+				+e.TR.row.hide
+					+e.TD.col_title(colspan="2")
+						+e.SPAN.text Денежные переводы
+				+e.TR.row.hide
+					+e.TD.col_give(data-category="transfer" data-currency="Paypal" data-direction="~Paypal~~WMR~~WMZ~")
+						+b.I.icon.icon-paypal
+						+e.SPAN.text Paypal
+					+e.TD.col_get(data-category="transfer" data-currency="Paypal" data-direction="~Paypal~~WMR~~WMZ~")
+						+b.I.icon.icon-paypal
+						+e.SPAN.text Paypal

@@ -1,0 +1,618 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ACCRUB {
+  background-image: url(sprite.png);
+  background-position: -25px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ACCUSD {
+  background-image: url(sprite.png);
+  background-position: -50px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ACRUB {
+  background-image: url(sprite.png);
+  background-position: -100px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ADVCEUR {
+  background-image: url(sprite.png);
+  background-position: -26px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ADVCRUB {
+  background-image: url(sprite.png);
+  background-position: 0px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ADVCUAH {
+  background-image: url(sprite.png);
+  background-position: -25px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ADVCUSD {
+  background-image: url(sprite.png);
+  background-position: -52px 0px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ATNBKZT {
+  background-image: url(sprite.png);
+  background-position: -52px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-BCH {
+  background-image: url(sprite.png);
+  background-position: -52px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-BTC {
+  background-image: url(sprite.png);
+  background-position: 0px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-BTG {
+  background-image: url(sprite.png);
+  background-position: -24px -180px;
+  width: 24px;
+  height: 15px;
+}
+.icon-CARDEUR {
+  background-image: url(sprite.png);
+  background-position: -50px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CARDKZT {
+  background-image: url(sprite.png);
+  background-position: 0px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CARDRUB {
+  background-image: url(sprite.png);
+  background-position: -25px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CARDUAH {
+  background-image: url(sprite.png);
+  background-position: -50px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CARDUSD {
+  background-image: url(sprite.png);
+  background-position: -77px 0px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CASHRUB {
+  background-image: url(sprite.png);
+  background-position: -77px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CASHUAH {
+  background-image: url(sprite.png);
+  background-position: -77px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CASHUSD {
+  background-image: url(sprite.png);
+  background-position: -77px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-CPTSUSD {
+  background-image: url(sprite.png);
+  background-position: -77px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-DASH {
+  background-image: url(sprite.png);
+  background-position: 0px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-DOGE {
+  background-image: url(sprite.png);
+  background-position: -26px 0px;
+  width: 26px;
+  height: 15px;
+}
+.icon-ECNEXUSD {
+  background-image: url(sprite.png);
+  background-position: -50px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EKZT {
+  background-image: url(sprite.png);
+  background-position: -75px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EPAYEUR {
+  background-image: url(sprite.png);
+  background-position: -102px 0px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EPAYUSD {
+  background-image: url(sprite.png);
+  background-position: -102px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ETC {
+  background-image: url(sprite.png);
+  background-position: -102px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ETH {
+  background-image: url(sprite.png);
+  background-position: -102px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EXMBTC {
+  background-image: url(sprite.png);
+  background-position: -102px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EXMEUR {
+  background-image: url(sprite.png);
+  background-position: -102px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EXMRUB {
+  background-image: url(sprite.png);
+  background-position: 0px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EXMUAH {
+  background-image: url(sprite.png);
+  background-position: -25px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-EXMUSD {
+  background-image: url(sprite.png);
+  background-position: -50px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-FRTBKZT {
+  background-image: url(sprite.png);
+  background-position: -75px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-GCMTUSD {
+  background-image: url(sprite.png);
+  background-position: -100px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-GPBRUB {
+  background-image: url(sprite.png);
+  background-position: 0px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-HLKBKZT {
+  background-image: url(sprite.png);
+  background-position: -25px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-KKBKZT {
+  background-image: url(sprite.png);
+  background-position: -50px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-KUKRUB {
+  background-image: url(sprite.png);
+  background-position: -75px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-LTC {
+  background-image: url(sprite.png);
+  background-position: -100px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-LVCNUSD {
+  background-image: url(sprite.png);
+  background-position: -127px 0px;
+  width: 25px;
+  height: 15px;
+}
+.icon-MPLEUR {
+  background-image: url(sprite.png);
+  background-position: -127px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-MPLUSD {
+  background-image: url(sprite.png);
+  background-position: -127px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-NEO {
+  background-image: url(sprite.png);
+  background-position: -127px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-NIXUSD {
+  background-image: url(sprite.png);
+  background-position: -127px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-NMC {
+  background-image: url(sprite.png);
+  background-position: -127px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-NTLREUR {
+  background-image: url(sprite.png);
+  background-position: -127px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-NTLRUSD {
+  background-image: url(sprite.png);
+  background-position: -127px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-P24UAH {
+  background-image: url(sprite.png);
+  background-position: 0px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PAUSD {
+  background-image: url(sprite.png);
+  background-position: -25px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PMBBUAH {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 26px;
+  height: 15px;
+}
+.icon-PMBTC {
+  background-image: url(sprite.png);
+  background-position: -75px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PMEUR {
+  background-image: url(sprite.png);
+  background-position: -100px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PMRRUB {
+  background-image: url(sprite.png);
+  background-position: -125px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PMRUSD {
+  background-image: url(sprite.png);
+  background-position: 0px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PMUSD {
+  background-image: url(sprite.png);
+  background-position: -25px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PMVUSD {
+  background-image: url(sprite.png);
+  background-position: -50px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PPC {
+  background-image: url(sprite.png);
+  background-position: -75px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PPEUR {
+  background-image: url(sprite.png);
+  background-position: -100px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PPRUB {
+  background-image: url(sprite.png);
+  background-position: -125px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PPUSD {
+  background-image: url(sprite.png);
+  background-position: -152px 0px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PRUSD {
+  background-image: url(sprite.png);
+  background-position: -152px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PSBRUB {
+  background-image: url(sprite.png);
+  background-position: -152px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-PSRUSD {
+  background-image: url(sprite.png);
+  background-position: -152px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-QWEUR {
+  background-image: url(sprite.png);
+  background-position: -152px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-QWKZT {
+  background-image: url(sprite.png);
+  background-position: -152px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-QWRUB {
+  background-image: url(sprite.png);
+  background-position: -152px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-QWUSD {
+  background-image: url(sprite.png);
+  background-position: -152px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-RFBRUB {
+  background-image: url(sprite.png);
+  background-position: -152px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-RMTFUSD {
+  background-image: url(sprite.png);
+  background-position: -152px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-RUSSTRUB {
+  background-image: url(sprite.png);
+  background-position: 0px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-SBERKZT {
+  background-image: url(sprite.png);
+  background-position: -25px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-SBERRUB {
+  background-image: url(sprite.png);
+  background-position: -50px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-SKLEUR {
+  background-image: url(sprite.png);
+  background-position: -73px -180px;
+  width: 25px;
+  height: 14px;
+}
+.icon-SKLUSD {
+  background-image: url(sprite.png);
+  background-position: -48px -180px;
+  width: 25px;
+  height: 14px;
+}
+.icon-STPUSD {
+  background-image: url(sprite.png);
+  background-position: -125px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-TBRUB {
+  background-image: url(sprite.png);
+  background-position: -150px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-TCSBRUB {
+  background-image: url(sprite.png);
+  background-position: -177px 0px;
+  width: 25px;
+  height: 15px;
+}
+.icon-USDT {
+  background-image: url(sprite.png);
+  background-position: 0px -180px;
+  width: 24px;
+  height: 15px;
+}
+.icon-WEXBTC {
+  background-image: url(sprite.png);
+  background-position: -177px -30px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WEXEUR {
+  background-image: url(sprite.png);
+  background-position: -177px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WEXRUB {
+  background-image: url(sprite.png);
+  background-position: -177px -60px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WEXUSD {
+  background-image: url(sprite.png);
+  background-position: -177px -75px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WIREEUR {
+  background-image: url(sprite.png);
+  background-position: -177px -90px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WIRERUB {
+  background-image: url(sprite.png);
+  background-position: -177px -105px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WIRETHB {
+  background-image: url(sprite.png);
+  background-position: -177px -120px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WIREUSD {
+  background-image: url(sprite.png);
+  background-position: -177px -135px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WMB {
+  background-image: url(sprite.png);
+  background-position: -177px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WME {
+  background-image: url(sprite.png);
+  background-position: 0px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WMR {
+  background-image: url(sprite.png);
+  background-position: -25px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WMU {
+  background-image: url(sprite.png);
+  background-position: -50px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WMX {
+  background-image: url(sprite.png);
+  background-position: -75px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WMZ {
+  background-image: url(sprite.png);
+  background-position: -100px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-WOUSD {
+  background-image: url(sprite.png);
+  background-position: -125px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-XEM {
+  background-image: url(sprite.png);
+  background-position: -150px -165px;
+  width: 25px;
+  height: 15px;
+}
+.icon-XMR {
+  background-image: url(sprite.png);
+  background-position: -177px -15px;
+  width: 25px;
+  height: 15px;
+}
+.icon-XRP {
+  background-image: url(sprite.png);
+  background-position: 0px -15px;
+  width: 26px;
+  height: 15px;
+}
+.icon-YAMRUB {
+  background-image: url(sprite.png);
+  background-position: -75px -150px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ZEC {
+  background-image: url(sprite.png);
+  background-position: -25px -45px;
+  width: 25px;
+  height: 15px;
+}
+.icon-ZPRUB {
+  background-image: url(sprite.png);
+  background-position: -175px -165px;
+  width: 25px;
+  height: 15px;
+}

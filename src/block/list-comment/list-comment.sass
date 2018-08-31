@@ -1,0 +1,131 @@
+.list-comment
+	padding: 8px
+	background: linear-gradient(to bottom, rgba($color-5, .1), rgba($color-5, .3))
+	box-shadow: 0 0 25px rgba($color-5, .1)
+	border-radius: 10px
+	&__box-wrapper
+		padding: 10px
+		background-color: rgb(249, 249, 247)
+		border-radius: 10px
+	&__nested
+		width: 100%
+		display: none
+	&__notice
+		font-weight: bold
+	&__img_contry
+		height: 18px
+		padding-right: 10px
+	&__item
+		background-color: #fff
+		border-radius: 8px
+		margin: 10px 0
+		width: 100%
+		box-sizing: border-box
+		font-size: 12px
+		.list-comment__item
+			padding: 5px
+		&_like
+			.list-comment
+				&__row_1
+					border-bottom: 1px solid rgba($color-1, .4)
+				&__item-box
+					background: linear-gradient(to top, rgba($like, .8), rgba($like, .4))
+					border: 1px solid rgba($color-1, .4)
+				&__icon_type,
+				&__date,
+				&__ip
+					color: $color-1
+		&_dislike
+			.list-comment
+				&__row_1
+					border-bottom: 1px solid rgba($dislike, .5)
+				&__item-box
+					background: linear-gradient(to top, rgba($dislike, .8), rgba($dislike, .4))
+					border: 1px solid rgba($dislike, .2)
+				&__icon_type,
+				&__date,
+				&__ip
+					color: rgba($color-12, .7)
+		&_comment
+			.list-comment
+				&__row_1
+					border-bottom: 1px solid rgba($color-10, .2)
+				&__item-box
+					background: linear-gradient(to top, rgba($comment, .7), rgba($comment, .4))
+					border: 1px solid rgba($color-10, .3)
+				&__icon_type,
+				&__date,
+				&__ip
+					color: $color-10
+	&__item-box
+		padding: 10px
+		border-radius: 8px
+	&__icon
+		padding-right: 5px
+	&__name-user
+		display: inline-block
+		width: 110px
+		overflow: hidden
+		&_admin
+			font-weight: bold
+	&__ip
+		margin-right: 50px
+	&__btn
+		margin-right: 10px
+		text-shadow: rgba(255,255,255,0.5) 0 0 1px
+		color: $color-9
+		font-size: 12px
+		border-bottom: 1px dashed $color-9
+		&_more
+			border-bottom: 0
+	&__text-btn-more
+		border-bottom: 1px dashed $color-9
+		margin-right: 5px
+	&__text
+		color: $color-6
+	&__row
+		display: flex
+		justify-content: space-between
+		margin-bottom: 10px
+		padding-bottom: 5px
+		&_1
+			color: $color-5
+			.list-comment__col_1
+				display: flex
+				align-items: center
+		&_2
+			min-height: 20px
+		&_3
+			margin-bottom: 0
+			cursor: pointer
+			flex-wrap: wrap
+			justify-content: flex-end
+			.list-comment__col_1
+				flex: 1
+				display: flex
+				justify-content: flex-start
+		&_4
+			display: none
+
+	// Кнопка показать форму для добавления отзыва
+	&__btn_add-new-review
+		cursor: pointer
+		border: 0
+		.list-comment
+			&__text
+				color: $color-9
+				border-bottom: 1px dashed $color-9
+				padding-right: 5px
+			&__icon_plus
+				color: $color-1
+			&__icon_arrow
+				display: inline-block
+				&::before
+					content: "\f107"
+					display: inline-block
+					font-family: FontAwesome
+				&.active::before
+					content: "\f106"
+	// форма для добавления нового комента	
+	&__box-add-new-review
+		display: none

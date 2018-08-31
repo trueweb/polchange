@@ -1,0 +1,141 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-1()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						
+						// text
+						+b.text-box_gradient
+							+e.H1.title Список всех обменных пунктов
+							+e.P.text В списке ниже представлен полный листинг надежных обменных пунктов, которые участвуют в рейтинге мониторинга обменников BestChange.ru. Все представленные здесь обменники прошли проверку нашим администратором.
+
+						// main__box_btn-info
+						+e.box_btn-info
+							+b.btn_info#btn_info_history
+								+e.I.icon.fa.fa-clock-o
+								+e.SPAN.text История
+
+							+b.btn_info#btn_info_settings
+								+e.I.icon.fa.fa-cog
+								+e.SPAN.text Настройка
+
+
+						// main__box_btn-info
+						+e.box_exchanger-currencies
+							+b.tab_exchanger-currencies
+								+e.item Обменные пункты
+
+							// table_exchange-rates
+							+b.TABLE.table_exchanger-currencies
+								+e.THEAD.title
+									+e.THEAD.head
+										+e.TR.row
+											+e.TH.col_title 
+												+b.I.fa.fa-info-circle
+											+e.TH.col_title Обменник
+											+e.TH.col_title Статус
+											+e.TH.col_title Резервы
+											+e.TH.col_title Курсов
+											+e.TH.col_title BL
+											+e.TH.col_title TS
+											+e.TH.col_title Отзывы
+									+e.TBODY.body
+										+e.TR.row
+											+e.TD.col_info
+												+b.I.fa.fa-info-circle
+												+b-info-change_table()
+
+											+e.TD.col_exchange
+												+e.A.link(href="#") NetEx24
+
+											+e.TD.col_status
+												+e.A.link(href="#") Работает
+
+											+e.TD.col_reserve
+													+e.A.link(href="#") 5555$
+
+											+e.TD.col_rate
+													+e.A.link(href="#") 11
+
+											+e.TD.col_bl
+													+e.A.link(href="#") 3311
+
+											+e.TD.col_ts
+													+e.A.link(href="#") -
+
+											+e.TD.col_reviews
+													+e.A.link(href="/commentary.html")
+														+e.SPAN.reviews_dislike 0 
+														SPAN / 
+														+e.SPAN.reviews_like 4455
+
+										+e.TR.row
+											+e.TD.col_info
+												+b.I.fa.fa-info-circle
+												+b-info-change_table()
+
+											+e.TD.col_exchange
+												+e.A.link(href="#") NetEx24
+
+											+e.TD.col_status
+												+e.A.link(href="#") Работает
+
+											+e.TD.col_reserve
+													+e.A.link(href="#") 5555$
+
+											+e.TD.col_rate
+													+e.A.link(href="#") 11
+
+											+e.TD.col_bl
+													+e.A.link(href="#") 3311
+
+											+e.TD.col_ts
+													+e.A.link(href="#") -
+
+											+e.TD.col_reviews
+													+e.A.link(href="/commentary.html")
+														+e.SPAN.reviews_dislike 0 
+														SPAN / 
+														+e.SPAN.reviews_like 4455
+
+										+e.TR.row
+											+e.TD.col_info
+												+b.I.fa.fa-info-circle
+												+b-info-change_table()
+
+											+e.TD.col_exchange
+												+e.A.link(href="#") NetEx24
+
+											+e.TD.col_status
+												+e.A.link(href="#") Работает
+
+											+e.TD.col_reserve
+													+e.A.link(href="#") 5555$
+
+											+e.TD.col_rate
+													+e.A.link(href="#") 11
+
+											+e.TD.col_bl
+													+e.A.link(href="#") 3311
+
+											+e.TD.col_ts
+													+e.A.link(href="#") -
+
+											+e.TD.col_reviews
+													+e.A.link(href="/commentary.html")
+														+e.SPAN.reviews_dislike 0 
+														SPAN / 
+														+e.SPAN.reviews_like 4455

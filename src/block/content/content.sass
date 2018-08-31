@@ -1,0 +1,32 @@
+.content
+	display: flex
+	background-color: $color-3
+	border-radius: 10px 0 0 0
+	padding: 12px
+	box-sizing: border-box
+	&__col
+		&_1
+			flex: 0 0 325px
+			border-radius: 8px
+			padding: 5px
+			background: rgba($color-1, 1)
+			margin-right: 15px
+			box-sizing: border-box
+		&_2
+			flex: 1
+
+@if $adaptive
+	@media #{$pc}
+		.content
+			&__col
+				&_1
+					overflow-x: hidden
+					height: 100vh
+					position: fixed
+					left: -1000px
+					top: 0
+					z-index: 1000
+					transition: .3s
+					&.active
+						left: 0
+						transition: .3s

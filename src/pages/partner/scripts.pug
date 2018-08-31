@@ -1,0 +1,71 @@
+extends ../../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		.container
+			+b.content
+				+e.col_1
+					+b-sidebar_left-2()
+
+				+e.col_2
+					+b.MAIN.main
+						// nav
+						+b-nav_main()
+						+b.text-box_banner-scripts
+							+e.H1.title Скрипты и формы
+
+							+e.item
+								+e.title Форма "Получить лучший курс" 468x60
+								+b.banner_polchange-468x60(class="_polchange" data-site="http://localhost:3000" data-ref="?555")
+									+e.row_1
+										+e.text_1 Получить лучший курс обмена
+									+e.row_2
+										+e.SELECT.select(name='output_money_1')
+											+e.OPTION.option(value='1' data-currency="QIWI RUR") QIWI RUR
+											+e.OPTION.option(value='2' data-currency="WMZ") WMZ
+
+										SPAN на
+										
+										+e.SELECT.select(name='output_money_2')
+											+e.OPTION.option(value='1' data-currency="QIWI RUR") QIWI RUR
+											+e.OPTION.option(value='2' data-currency="WMZ") WMZ
+										+e.BUTTON.btn Лучший курс
+									+e.row_3
+										+e.A.link(href="#" target="_blank") Надежный мониторинг обменников
+										+e.A.link(href="#" target="_blank") Партнерская программа для веб-мастеров
+							+e.item
+								+e.TEXTAREA.textarea <div class="banner banner_polchange-468x60 banner_polchange" data-site="http://localhost:3000" data-ref="?555"> <div class="banner__row banner__row_1"> <div class="banner__text banner__text_1">Получить лучший курс обмена </div> </div> <div class="banner__row banner__row_2"> <select class="banner__select" name="output_money_1"> <option class="banner__option" value="1" selected="selected" data-currency="QIWI RUR">QIWI RUR </option> <option class="banner__option" value="2" data-currency="WMZ">WMZ </option> </select> <span>на</span> <select class="banner__select" name="output_money_2"> <option class="banner__option" value="1" selected="selected" data-currency="QIWI RUR">QIWI RUR </option> <option class="banner__option" value="2" data-currency="WMZ">WMZ </option> </select> <button class="banner__btn">Лучший курс </button> </div> <div class="banner__row banner__row_3"><a class="banner__link" href="#">Надежный мониторинг обменников</a><a class="banner__link" href="#">Партнерская программа для веб-мастеров</a> </div> </div> <style>.banner_polchange-468x60{border:1px solid #619420;font-family:Tahoma,Verdana,sans-serif;height:60px;width:468px;display:inline-block;background:-webkit-gradient(linear,left bottom,left top,from(rgba(97,148,32,.8)),to(rgba(97,148,32,.4)));background:linear-gradient(to top,rgba(97,148,32,.8),rgba(97,148,32,.4));text-align:center;font-size:14px}.banner_polchange-468x60 .banner__text_1{font-size:16px;text-shadow:#000 0 0 1px;color:#fff}.banner_polchange-468x60 .banner__link{font-size:11px;color:#fff;padding-right:15px;border-bottom:0}.banner_polchange-468x60 .banner__select{background-color:#fff;color:#000}.banner_polchange-468x60 .banner__btn{margin-left:10px;background-color:#dadad2}</style><script>(function(){let a=document.querySelectorAll('.banner_polchange .banner__btn'),b=function(c,d){for(let f=0;c.length>f;f++)c[f].addEventListener(d,function(){let h=this.parentNode.parentNode,j=h.querySelectorAll('.banner__select[name="output_money_1"] option'),k=h.querySelectorAll('.banner__select[name="output_money_2"] option'),l=h.getAttribute('data-site'),m=h.getAttribute('data-ref'),n,o;for(let p=0;j.length>p;p++)j[p].selected&&(n=j[p].getAttribute('data-currency'));for(let p=0;k.length>p;p++)k[p].selected&&(o=k[p].getAttribute('data-currency'));window.open(`${l}/${n}/${o}/${m}`,'_blank')})};b(a,'click'),b(a,'touch')})();</script>
+						
+						
+							+e.item
+								+e.title Вертикальная форма "Лучший курс обмена" 140x600
+								+b.banner_polchange-140x600(class="_polchange" data-site="http://localhost:3000" data-ref="?555")
+									+e.row_1
+										+e.IMG(src="/img/logo.png").img_logo
+									+e.row_2
+										+e.text_1 
+											+e.A.link(href="#" target="_blank") Лучший курс обмена
+									+e.row_3
+										+e.SPAN.text_2 Обменять
+										+e.SELECT.select(name='output_money_1')
+											+e.OPTION.option(value='1' data-currency="QIWI RUR") QIWI RUR
+											+e.OPTION.option(value='2' data-currency="WMZ") WMZ
+
+										+e.SPAN.text_3 на
+										
+										+e.SELECT.select(name='output_money_2')
+											+e.OPTION.option(value='1' data-currency="QIWI RUR") QIWI RUR
+											+e.OPTION.option(value='2' data-currency="WMZ") WMZ
+										+e.BUTTON.btn Лучший обмен
+									+e.row_3
+										+e.A.link(href="#") Открыть все валюты
+									+e.row_4
+										+e.text_4 <b>PolChange</b> – популярный сервис по подбору выгодных обменных пунктов электронных валют, который поможет вам производить свои обмены <b>безопасно</b> и с <b>минимальными</b> потерями на комиссиях.
+
+							+e.item
+								+e.TEXTAREA.textarea <div class="banner banner_polchange-140x600 banner_polchange" data-site="http://localhost:3000" data-ref="?555"> <div class="banner__row banner__row_1"><img class="banner__img banner__img_logo" src="/img/logo.png" alt="" role="presentation"> </div> <div class="banner__row banner__row_2"> <div class="banner__text banner__text_1">Лучший курс обмена </div> </div> <div class="banner__row banner__row_3"><span class="banner__text banner__text_2">Обменять</span> <select class="banner__select" name="output_money_1"> <option class="banner__option" value="1" data-currency="QIWI RUR">QIWI RUR </option> <option class="banner__option" value="2" data-currency="WMZ">WMZ </option> </select><span class="banner__text banner__text_3">на</span> <select class="banner__select" name="output_money_2"> <option class="banner__option" value="1" data-currency="QIWI RUR">QIWI RUR </option> <option class="banner__option" value="2" data-currency="WMZ">WMZ </option> </select> <button class="banner__btn">Лучший обмен </button> </div> <div class="banner__row banner__row_3"><a class="banner__link" href="#">Открыть все валюты</a> </div> <div class="banner__row banner__row_4"> <div class="banner__text banner__text_4"><b>PolChange</b> – популярный сервис по подбору выгодных обменных пунктов электронных валют, который поможет вам производить свои обмены <b>безопасно</b> и с <b>минимальными</b> потерями на комиссиях. </div> </div> </div><style>.banner_polchange-140x600{border:1px solid #619420;font-family:Tahoma,Verdana,sans-serif;height:600px;width:140px;display:inline-block;background:-webkit-gradient(linear,left top,left bottom,from(rgba(97,148,32,.8)),to(rgba(255,255,255,.4)));background:linear-gradient(to bottom,rgba(97,148,32,.8),rgba(255,255,255,.4));text-align:center;padding:5px;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:14px}.banner_polchange-140x600 .banner__img_logo{width:100%;margin:20px 0 40px}.banner_polchange-140x600 .banner__text_1{font-size:16px;text-shadow:#000 0 0 1px;color:#fff}.banner_polchange-140x600 .banner__text_2,.banner_polchange-140x600 .banner__text_3{font-size:16px;text-shadow:#000 0 0 1px;color:#fff;margin-bottom:10px}.banner_polchange-140x600 .banner__text_1{margin-bottom:40px}.banner_polchange-140x600 .banner__text_4{font-size:11px}.banner_polchange-140x600 .banner__link{display:inline-block;text-align:center;font-size:12px;color:#fff;border-bottom:0;text-decoration:underline}.banner_polchange-140x600 .banner__select{background-color:#fff;color:#000;width:100%}.banner_polchange-140x600 .banner__btn{margin-top:20px;background-color:#dadad2}.banner_polchange-140x600 .banner__row_3{margin-bottom:50px}.banner_polchange-140x600 .banner__row_4{padding:3px;border-radius:5px;background-color:#fff}</style><script>(function(){let a=document.querySelectorAll('.banner_polchange .banner__btn'),b=function(c,d){for(let f=0;c.length>f;f++)c[f].addEventListener(d,function(){let h=this.parentNode.parentNode,j=h.querySelectorAll('.banner__select[name="output_money_1"] option'),k=h.querySelectorAll('.banner__select[name="output_money_2"] option'),l=h.getAttribute('data-site'),m=h.getAttribute('data-ref'),n,o;for(let p=0;j.length>p;p++)j[p].selected&&(n=j[p].getAttribute('data-currency'));for(let p=0;k.length>p;p++)k[p].selected&&(o=k[p].getAttribute('data-currency'));window.open(`${l}/${n}/${o}/${m}`,'_blank')})};b(a,'click'),b(a,'touch')})();</script>
